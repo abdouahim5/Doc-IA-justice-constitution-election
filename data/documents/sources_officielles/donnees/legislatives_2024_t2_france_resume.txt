@@ -1,0 +1,9 @@
+# Résumé : legislatives_2024_t2_france.csv
+Source : data.gouv.fr
+
+Colonnes : Code localisation, Libellé localisation, Inscrits, Votants, % Votants, Abstentions, % Abstentions, Exprimés, % Exprimés/inscrits, % Exprimés/votants, Blancs, % Blancs/inscrits
+
+- ? | inscrits=? votants=? exprimés=?
+
+## Répartition par scrutin (échantillon)
+- ?: 1 lignes

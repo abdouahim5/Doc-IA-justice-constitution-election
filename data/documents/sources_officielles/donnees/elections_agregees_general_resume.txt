@@ -1,0 +1,38 @@
+# Résumé : elections_agregees_general.csv
+Source : data.gouv.fr
+
+Colonnes : id_election, id_brut_miom, code_departement, libelle_departement, code_canton, libelle_canton, code_commune, libelle_commune, code_circonscription, libelle_circonscription, code_bv, inscrits
+
+- 2026_muni_t2 | inscrits=927 votants=394 exprimés=380
+- 2026_muni_t2 | inscrits=1206 votants=491 exprimés=475
+- 2026_muni_t2 | inscrits=1184 votants=442 exprimés=421
+- 2026_muni_t2 | inscrits=1169 votants=631 exprimés=621
+- 2026_muni_t2 | inscrits=1067 votants=670 exprimés=653
+- 2026_muni_t2 | inscrits=1116 votants=574 exprimés=563
+- 2026_muni_t2 | inscrits=1114 votants=577 exprimés=559
+- 2026_muni_t2 | inscrits=1090 votants=648 exprimés=631
+- 2026_muni_t2 | inscrits=1439 votants=827 exprimés=811
+- 2026_muni_t2 | inscrits=1335 votants=701 exprimés=692
+- 2026_muni_t2 | inscrits=1601 votants=797 exprimés=785
+- 2026_muni_t2 | inscrits=872 votants=524 exprimés=517
+- 2026_muni_t2 | inscrits=926 votants=467 exprimés=456
+- 2026_muni_t2 | inscrits=1120 votants=604 exprimés=591
+- 2026_muni_t2 | inscrits=1235 votants=697 exprimés=687
+- 2026_muni_t2 | inscrits=1084 votants=633 exprimés=618
+- 2026_muni_t2 | inscrits=1290 votants=769 exprimés=758
+- 2026_muni_t2 | inscrits=1308 votants=708 exprimés=693
+- 2026_muni_t2 | inscrits=1227 votants=695 exprimés=687
+- 2026_muni_t2 | inscrits=1234 votants=569 exprimés=557
+- 2026_muni_t2 | inscrits=1168 votants=652 exprimés=642
+- 2026_muni_t2 | inscrits=1111 votants=534 exprimés=525
+- 2026_muni_t2 | inscrits=1279 votants=540 exprimés=536
+- 2026_muni_t2 | inscrits=1230 votants=895 exprimés=876
+- 2026_muni_t2 | inscrits=117 votants=85 exprimés=85
+- 2026_muni_t2 | inscrits=961 votants=563 exprimés=560
+- 2026_muni_t2 | inscrits=1047 votants=636 exprimés=623
+- 2026_muni_t2 | inscrits=1013 votants=548 exprimés=539
+- 2026_muni_t2 | inscrits=972 votants=563 exprimés=553
+- 2026_muni_t2 | inscrits=1190 votants=757 exprimés=748
+
+## Répartition par scrutin (échantillon)
+- 2026_muni_t2: 501 lignes

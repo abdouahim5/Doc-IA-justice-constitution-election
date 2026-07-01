@@ -1,0 +1,51 @@
+# Catalogue droit, lois et jurisprudence en France
+# Catégorie : justice
+# Sources : Légifrance, Cour de cassation, Conseil d'État, Conseil constitutionnel, justice.gouv.fr
+
+## Où trouver les textes de loi
+
+| Type | Source officielle | URL |
+|------|-------------------|-----|
+| Lois, décrets, codes | Légifrance | https://www.legifrance.gouv.fr/ |
+| Code civil | Légifrance | codes/id/LEGITEXT000006070721 |
+| Code pénal | Légifrance | codes/id/LEGITEXT000006070719 |
+| Code de procédure civile | Légifrance | codes/id/LEGITEXT000006070716 |
+| Code de procédure pénale | Légifrance | codes/id/LEGITEXT000006071158 |
+| Code de justice administrative | Légifrance | codes/id/LEGITEXT000006070933 |
+
+## Jurisprudence (décisions des cours)
+
+| Juridiction | Rôle | Accès |
+|-------------|------|-------|
+| Cour de cassation | Unifie le droit — cassation / renvoi | Judilibre (courdecassation.fr) |
+| Conseil d'État | Droit administratif | conseil-etat.fr/ressources/jurisprudence |
+| Conseil constitutionnel | Normes constitutionnelles, QPC | conseil-constitutionnel.fr/decisions |
+| Cours d'appel | Réexamen des jugements | Tribunaux judiciaires |
+
+## Justice au quotidien
+
+- **Ministère de la Justice** : https://www.justice.gouv.fr/
+- **Organisation des tribunaux** : https://www.justice.fr/justice-fr/organisation-de-la-justice
+- **Service-public — justice** : https://www.service-public.fr/particuliers/vosdroits/N19811
+- **Aide juridictionnelle** : service-public.fr F2078
+
+## Vocabulaire utile
+
+- **Arrêt** : décision d'une cour d'appel ou de la Cour de cassation
+- **Jugement** : décision d'un tribunal de première instance
+- **QPC** : question prioritaire de constitutionnalité
+- **Cassation** : annulation d'une décision par la Cour de cassation
+- **Jurisprudence** : ensemble des décisions des tribunaux qui interprètent la loi
+
+## Question prioritaire de constitutionnalité (QPC)
+
+La QPC permet à toute personne impliquée dans un procès de contester la conformité
+d'une loi aux droits et libertés garantis par la Constitution. Introduite en 2010,
+elle est transmise au Conseil constitutionnel par le Conseil d'État ou la Cour de cassation.
+
+Source : service-public.gouv.fr F21088 · Conseil constitutionnel (décisions QPC indexées)
+
+## Mise à jour
+
+Consultez toujours Légifrance pour la version consolidée en vigueur d'un texte.
+Judilibre pour la jurisprudence de la Cour de cassation (open data).

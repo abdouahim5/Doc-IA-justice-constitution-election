@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environnement — ne jamais committer les secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.production.example
+.venv/
+venv/
+env/
+
+# Vector store (généré localement)
+data/vectorstore/
+
+# IDE & outils
+.vscode/
+.idea/
+.cursor/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Modèles téléchargés
+models/
+
+# Logs
+*.log

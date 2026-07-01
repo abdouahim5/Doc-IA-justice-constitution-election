@@ -1,0 +1,27 @@
+# data.gouv.fr — jeux de données Justice
+Source : https://www.data.gouv.fr/fr/organizations/ministere-de-la-justice/
+Éditeur : data.gouv.fr
+Catégorie : justice
+
+Liste des juridictions compétentes pour les communes de France Ministère de la Justice Mis à jour le 11 févr. 2026 Métadonnées : Bon (100 %) 37K 10K 1 6 Le fichier publié contient les juridictions compétentes pour chaque commune française parmi les Cours d’appel, les Tribunaux Judiciaires, les Tribunaux de proximité et les Conseils de Prud’hommes.
+Ch…
+Liste des juridictions compétentes pour les communes de France Ministère de la Justice Mis à jour le 11 févr. 2026 Métadonnées : Bon (100 %) 37K 10K 1 6 Le fichier publié contient les juridictions compétentes pour chaque commune française parmi les Cours d’appel, les Tribunaux Judiciaires, les Tribunaux de proximité et les Conseils de Prud’hommes.
+Ch…
+
+### Liste des juridictions compétentes pour les communes de France
+
+Ministère de la Justice Mis à jour le 11 févr. 2026
+Ministère de la Justice
+Ministère de la Justice
+Ministère de la Justice
+Mis à jour le 11 févr. 2026
+Métadonnées : Bon (100 %) 37K 10K 1 6
+Métadonnées : Bon (100 %)
+Métadonnées : Bon (100 %)
+Métadonnées : Bon (100 %)
+Bon (100 %)
+37K 10K 1 6
+37K
+10K
+Le fichier publié contient les juridictions compétentes pour chaque commune française parmi les Cours d’appel, les Tribunaux Judiciaires, les Tribunaux de proximité et les Conseils de Prud’hommes.
+Ch…

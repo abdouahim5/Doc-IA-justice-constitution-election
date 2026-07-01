@@ -1,0 +1,84 @@
+# Synthèse — Code pénal français : lois, infractions, délits et crimes
+# Catégorie : justice
+# Sources de référence : service-public.gouv.fr F1157, F2189, F31982 ; Ministère de la Justice
+# (Légifrance bloque le scraping HTTP — consultez legifrance.gouv.fr pour le texte intégral)
+
+## Article 111-1 du Code pénal — Classification des infractions
+
+Les infractions pénales sont classées, suivant leur gravité, en crimes, délits et contraventions.
+
+## Les trois catégories d'infractions
+
+### Contravention (la moins grave)
+- Punie d'une amende (5 classes, jusqu'à 1 500 € ou 3 000 € en récidive).
+- Jugée par le tribunal de police ou le tribunal correctionnel (contraventions de 5e classe).
+- Délai de prescription : 1 an (action publique).
+- Exemples : stationnement interdit, trouble anormal de voisinage, blessures sans ITT.
+
+### Délit (gravité intermédiaire)
+- Punissable d'une amende et/ou d'une peine d'emprisonnement inférieure ou égale à 10 ans.
+- Jugé par le tribunal correctionnel (personne majeure).
+- La personne poursuivie est appelée **prévenu** ; si relaxée, elle est acquittée.
+- Délai de prescription : 6 ans (action publique).
+- La tentative n'est punissable que si un texte de loi le prévoit (ex. tentative de vol).
+- Exemples : vol simple, escroquerie, coups et blessures, abus de confiance, délit de fuite.
+
+### Crime (exemples)
+- Meurtre, assassinat, viol, braquage à main armée, terrorisme
+- Jugés par la cour d'assises ou la cour criminelle
+- Peine : réclusion criminelle (15 ans à perpétuité)
+- Prescription : 20 ans (plainte possible dans ce délai pour le viol)
+
+## Le viol (crime)
+
+Le viol est un **crime** : acte de pénétration sexuelle ou acte bucco-génital/bucco-anal non consenti.
+- Juridiction : cour d'assises ou cour criminelle départementale
+- Peine de principe : 15 ans de réclusion criminelle (30 ans si la victime décède)
+- Prescription de l'action publique : 20 ans
+- Source : service-public.gouv.fr F1526
+
+- Punissable d'une peine de réclusion criminelle de 15 ans à la perpétuité.
+- Jugé par la cour d'assises ou la cour criminelle départementale.
+- La personne poursuivie est appelée **accusé** ; avocat obligatoire.
+- Délai de prescription : 20 ans (30 ans pour terrorisme, viol sur mineur, etc.).
+- La tentative de crime est **toujours** punissable.
+- Exemples : meurtre, assassinat, viol, braquage à main armée, terrorisme.
+
+## Juridictions pénales compétentes
+
+| Infraction | Juridiction |
+|------------|-------------|
+| Contravention | Tribunal de police |
+| Délit | Tribunal correctionnel |
+| Crime | Cour d'assises / cour criminelle |
+
+Si une affaire regroupe plusieurs infractions, c'est la juridiction de l'infraction la plus grave qui juge l'ensemble.
+
+## Sanctions pénales principales
+
+- **Amende** : montant fixé par la loi, plafonné selon la catégorie d'infraction.
+- **Emprisonnement** : prison ferme, sursis, semi-liberté, détention à domicile sous surveillance électronique.
+- **Travail d'intérêt général (TIG)** : alternative à la prison pour certaines peines courtes.
+- **Peines complémentaires** : confiscation, annulation du permis de conduire, interdiction de droits.
+
+## Délais de prescription (action publique)
+
+| Type | Délai |
+|------|-------|
+| Contravention | 1 an |
+| Délit | 6 ans |
+| Crime | 20 ans (30 ans pour certains crimes) |
+
+Le délai court en principe du jour où l'infraction est commise.
+
+## Principes fondamentaux
+
+- **Légalité des délits et des peines** (art. 111-3 CP) : nul ne peut être puni d'un crime, délit ou contravention si ce n'est en vertu d'un texte ayant force de loi ou d'un règlement.
+- **Non-rétroactivité** de la loi pénale plus sévère.
+- **Récidive** : peut aggraver les peines encourues.
+
+## Où consulter les textes officiels
+
+- Code pénal intégral : https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006070719
+- Code de procédure pénale : https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006071158
+- Jurisprudence Cour de cassation : Judilibre (courdecassation.fr)

@@ -1,0 +1,51 @@
+# Calendrier des principaux scrutins en France (sources officielles)
+# Source : vie-publique.fr, ministère de l'Intérieur, INSEE — maj 2024-2026
+# Catégorie : elections
+
+## Scrutins nationaux récents (dates officielles)
+
+| Scrutin | Date(s) | Notes |
+|---------|---------|-------|
+| Élections européennes 2024 | **9 juin 2024** | Tour unique. Participation : 51,49 % (INSEE). |
+| Élections législatives 2024 — 1er tour | **30 juin 2024** | Dissolution de l'Assemblée le 9 juin 2024. |
+| Élections législatives 2024 — 2nd tour | **7 juillet 2024** | 501 circonscriptions en ballotage après le 1er tour. |
+| Élection présidentielle 2022 — 1er tour | **10 avril 2022** | |
+| Élection présidentielle 2022 — 2nd tour | **24 avril 2022** | |
+| Élections législatives 2022 — 1er tour | **12 juin 2022** | |
+| Élections législatives 2022 — 2nd tour | **19 juin 2022** | |
+| Élections européennes 2019 | **26 mai 2019** | Tour unique. |
+| Élection présidentielle 2017 — 1er tour | **23 avril 2017** | |
+| Élection présidentielle 2017 — 2nd tour | **7 mai 2017** | |
+
+## Scrutins locaux récents
+
+| Scrutin | Date(s) | Notes |
+|---------|---------|-------|
+| Élections municipales 2026 — 1er tour | **15 mars 2026** | |
+| Élections municipales 2026 — 2nd tour | **22 mars 2026** | Si ballotage. |
+| Élections municipales 2020 — 1er tour | **15 mars 2020** | Report partiel (Covid-19). |
+| Élections municipales 2020 — 2nd tour | **28 juin 2020** | |
+| Élections départementales et régionales 2021 — 1er tour | **20 juin 2021** | |
+| Élections départementales et régionales 2021 — 2nd tour | **27 juin 2021** | |
+
+## Prochains scrutins connus (à confirmer sur service-public.fr / vie-publique.fr)
+
+| Scrutin | Période indicative | Référence |
+|---------|-------------------|-----------|
+| Élections municipales | mars 2026 (tours 15 et 22 mars) | Cycle municipal 6 ans |
+| Élections européennes | juin 2029 (tous les 5 ans) | Dernier : 9 juin 2024 |
+| Élection présidentielle | avril 2027 (tous les 5 ans) | Dernier : 10 et 24 avril 2022 |
+
+## Révision constitutionnelle récente
+
+| Événement | Date |
+|-----------|------|
+| Loi constitutionnelle n° 2024-200 (IVG) | **8 mars 2024** — promulguée, modification de l'article 34 |
+| Dissolution de l'Assemblée nationale | **9 juin 2024** — par le Président de la République |
+
+## Rappels réglementaires
+
+- Élection présidentielle : 2 tours si aucun candidat n'obtient la majorité absolue au 1er tour.
+- Scrutin européen en France : **tour unique**.
+- Législatives : 2 tours dans les circonscriptions sans majorité au 1er tour.
+- Horaires habituels des bureaux de vote : 8h–18h (19h pour la présidentielle).

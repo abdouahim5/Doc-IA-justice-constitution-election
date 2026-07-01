@@ -1,0 +1,35 @@
+# Environnement local
+venv/
+.venv/
+.env
+.env.*
+!.env.production.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Git & IDE
+.git/
+.gitignore
+.cursor/
+.vscode/
+*.md
+!docs/DEPLOIEMENT.md
+
+# Données générées (montées en volume en prod)
+data/vectorstore/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Scripts locaux Windows
+*.bat
+install_wsl.bat
+demarrer.bat

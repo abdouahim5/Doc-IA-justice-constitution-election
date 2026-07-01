@@ -1,0 +1,20 @@
+# Éligibilité à la présidence de la République française
+# Sources : Constitution (art. 3, 6, 7) ; code électoral (élection du Président)
+
+## Conditions pour être candidat à l'élection présidentielle
+
+Pour se présenter à l'élection du Président de la République, un candidat doit remplir les conditions suivantes :
+
+1. **Nationalité française** — être ressortissant français.
+2. **Âge** — avoir au moins **35 ans révolus** le jour du premier tour de scrutin.
+3. **Droits civils et politiques** — jouir de ses droits civils et politiques (comme les électeurs, art. 3 de la Constitution) et ne pas être frappé d'inéligibilité.
+4. **Parrainages** — recueillir les signatures de **500 personnes éligibles** (élus : députés, sénateurs, conseillers généraux, maires, etc.), réparties sur au moins **30 départements ou collectivités** différents, avec un maximum de **10 %** des parrainages provenant d'une même collectivité (code électoral).
+
+## Mode d'élection (Constitution)
+
+- **Article 6** : le Président de la République est élu pour **cinq ans** au **suffrage universel direct**. Nul ne peut exercer plus de **deux mandats consécutifs**.
+- **Article 7** : le Président est élu à la **majorité absolue** des suffrages exprimés. Si elle n'est pas obtenue au premier tour, un **second tour** est organisé entre les deux candidats arrivés en tête.
+
+## Électeurs (Article 3 de la Constitution)
+
+Sont électeurs, dans les conditions déterminées par la loi, tous les nationaux français majeurs des deux sexes, jouissant de leurs droits civils et politiques.

@@ -1,0 +1,23 @@
+# Remplacez {$DOMAIN} par votre nom de domaine (variable d'environnement Caddy)
+{$DOMAIN} {
+    encode gzip zstd
+
+    reverse_proxy app:8501 {
+        flush_interval -1
+    }
+
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        -Server
+    }
+
+    log {
+        output stdout
+        format console
+    }
+}
+
+# Redirection HTTP → HTTPS gérée automatiquement par Caddy (Let's Encrypt)

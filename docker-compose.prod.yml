@@ -1,0 +1,99 @@
+# DocIA — déploiement production (VPS)
+# Usage : cp .env.production.example .env && éditez .env puis :
+#         docker compose -f docker-compose.prod.yml up -d --build
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: docia-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-docia}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Définissez POSTGRES_PASSWORD dans .env}
+      POSTGRES_DB: ${POSTGRES_DB:-docia_fr}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-docia} -d ${POSTGRES_DB:-docia_fr}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+    networks:
+      - docia-internal
+    # Port non exposé en prod (accès interne uniquement)
+    # Décommentez pour debug local :
+    # ports:
+    #   - "5433:5432"
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docia-app:latest
+    container_name: docia-app
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-docia}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-docia_fr}
+      DOCUMENTS_DIR: /app/data/documents
+      VECTOR_STORE_DIR: /app/data/vectorstore
+      RUN_PG_INIT: ${RUN_PG_INIT:-true}
+      AUTO_PG_INGEST: ${AUTO_PG_INGEST:-false}
+      AUTO_CHROMA_INDEX: ${AUTO_CHROMA_INDEX:-false}
+      DB_WAIT_SECONDS: ${DB_WAIT_SECONDS:-120}
+    volumes:
+      - docia_documents:/app/data/documents
+      - docia_vectorstore:/app/data/vectorstore
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - docia-internal
+      - docia-public
+    ports:
+      - "${APP_PORT:-8501}:8501"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+  # Reverse proxy HTTPS — profil optionnel
+  # docker compose -f docker-compose.prod.yml --profile https up -d
+  caddy:
+    image: caddy:2-alpine
+    container_name: docia-caddy
+    restart: unless-stopped
+    profiles:
+      - https
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:?Définissez DOMAIN dans .env pour le profil https}
+      ACME_EMAIL: ${ACME_EMAIL:-admin@example.com}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - docia-public
+
+volumes:
+  pgdata:
+  docia_documents:
+  docia_vectorstore:
+  caddy_data:
+  caddy_config:
+
+networks:
+  docia-internal:
+    internal: true
+  docia-public:

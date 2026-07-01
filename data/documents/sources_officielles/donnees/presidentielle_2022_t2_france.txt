@@ -1,0 +1,6 @@
+# Présidentielle 2022 — 2nd tour (France entière)
+Source : https://static.data.gouv.fr/resources/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-2nd-tour/20220428-141900/resultats-par-niveau-fe-t2-france-entiere.txt
+Éditeur : data.gouv.fr / Ministère de l'Intérieur
+
+Code du niveau;Libell� du niveau;Etat saisie;Inscrits;Abstentions;% Abs/Ins;Votants;% Vot/Ins;Blancs;% Blancs/Ins;% Blancs/Vot;Nuls;% Nuls/Ins;% Nuls/Vot;Exprim�s;% Exp/Ins;% Exp/Vot;N�Panneau;Sexe;Nom;Pr�nom;Voix;% Voix/Ins;% Voix/Exp
+FE;France enti�re;Complet;48752339;13655861;28,01;35096478;71,99;2233904;4,58;6,37;805249;1,65;2,29;32057325;65,76;91,34;1;M;MACRON;Emmanuel;18768639;38,50;58,55;2;F;LE PEN;Marine;13288686;27,26;41,45

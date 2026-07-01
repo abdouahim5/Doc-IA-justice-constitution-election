@@ -1,0 +1,609 @@
+# INSEE — Abstention et participation (Portrait social 2024)
+Source : https://www.insee.fr/fr/statistiques/8612556
+Éditeur : INSEE
+Catégorie : elections
+
+Vie citoyenne Insee Références Paru le : Paru le 18/11/2025 Données (xlsx, 23 Ko) France, portrait social -
+            Novembre 2025
+Vie citoyenne
+
+# Vie citoyenne
+
+Insee Références Paru le : Paru le 18/11/2025 Données (xlsx, 23 Ko)
+Insee Références Paru le : Paru le 18/11/2025
+Insee Références
+Paru le : Paru le 18/11/2025
+Données (xlsx, 23 Ko)
+Données (xlsx, 23 Ko)
+Données (xlsx, 23 Ko)
+Données
+(xlsx, 23 Ko)
+France, portrait social -
+            Novembre 2025
+Consulter Documentation Consultation de la
+                  publication ou de la documentation qui lui est associée Consulter Documentation Début mai 2024, à la clôture des inscriptions pour les élections au Parlement européen,
+                     en France hors Nouvelle-Calédonie, 49,3 millions d’électeurs sont inscrits sur les
+                     listes électorales ( figure 1 ). Parmi eux, 47,4 millions sont des électeurs français inscrits sur une liste communale principale , 1,6 million sont inscrits sur une liste consulaire à l’étranger et 269 100 sont des ressortissants d’un autre État membre de l’Union européenne (UE)
+                     inscrits sur une liste complémentaire des communes . Avec les 222 000 électeurs de Nouvelle-Calédonie, le corps électoral pour les élections
+                     au Parlement européen compte 49,5 millions d’électeurs. Il en comptait 47,3 millions
+                     pour les élections européennes de 2019. tableau Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 - Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste
+                                 électorale en France, 47 445 283 sont inscrits sur une liste communale principale. Sexe Sur liste communale principale Sur listes communales complémentaires Sur liste consulaire Ensemble Sur liste municipale et européenne Sur liste municipale seule Sur liste européenne seule Femmes 24 779 118 125 692 28 849 7 594 788 231 25 729 484 Hommes 22 666 165 128 162 30 800 7 679 777 424 23 610 230 Ensemble 47 445 283 253 854 59 649 15 273 1 565 655 49 339 714 Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste électorale
+                                 en France, 47 445 283 sont inscrits sur une liste communale principale. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données du 8 mai 2024. Les Français résidant hors de France peuvent s’inscrire sur l’une des 213 listes consulaires.
+                     Cinq d’entre elles comptent plus de 50 000 électeurs : le poste consulaire de Genève
+                     gère la liste la plus importante (132 000 électeurs), suivi par ceux de Londres, Bruxelles,
+                     Montréal et Tel Aviv. En France métropolitaine et dans les DROM, 95 % des Français en âge de voter sont
+                     inscrits sur une liste électorale communale, comme pour l’élection présidentielle
+                     de 2022 ( figure 2 ). Tous les jeunes adultes (entre 18 et 24 ans) sont inscrits, du fait principalement
+                     de la procédure de l’inscription d’office des jeunes à 18 ans. Le taux d’inscription
+                     diminue ensuite avec l’âge et est plus faible pour les électeurs de 40 à 54 ans (91 %).
+                     En effet, tous les électeurs ne se réinscrivent pas sur la liste de leur nouvelle
+                     commune après un déménagement, alors qu’ils peuvent être radiés de l’ancienne liste
+                     par la mairie qui constate leur perte d’ attache communale . Au-delà de 54 ans, le taux d’inscription augmente pour atteindre 96 % aux âges de
+                     80 ans ou plus. tableau Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe en % Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe (en %) - Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 %
+                                 des femmes âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Âge Femmes Hommes Ensemble 18-24 ans 100 100 100 25-39 ans 96 98 97 40-54 ans 91 91 91 55-64 ans 93 93 93 65-79 ans 94 95 95 80 ans ou plus 95 97 96 Ensemble 94 95 95 Notes : L’âge est exprimé en âge révolu au 1 er avril 2024. Sont pris en compte uniquement les inscrits ayant 18 ans ou plus à cette
+                                 date. Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 % des femmes
+                                 âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Champ : France métropolitaine et DOM, population de nationalité française âgée de
+                                 18 ans ou plus au 1 er avril 2024. Source : Insee, estimations de population (données provisoires et arrêtées fin mars 2024) ;
+                                 Répertoire électoral unique, données au 8 mai 2024. Depuis l’élection présidentielle de 2022, le nombre d’inscrits sur les listes électorales
+                     (hors Nouvelle-Calédonie) a augmenté de 536 500 personnes (+1,1 %) ( figure 3 ). Parmi les électeurs français, 1,8 million de jeunes nés entre mi-2004 et début 2006,
+                     atteignant 18 ans, ont été inscrits d’office au cours de cette période, alors que
+                     1,2 million de décès ont entraîné des radiations des listes, soit un solde net de
+                     +609 600 inscrits. À cela s’ajoutent 121 600 inscriptions d’office liées à l’acquisition
+                     de la nationalité française. Les mouvements démographiques naturels et les acquisitions
+                     de nationalité conduisent ainsi à une hausse de 731 100 électeurs. tableau Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 - Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Type d'inscription ou de radiation Évolution depuis le 9 mars 2022 Nombre d'électeurs au 9 mars 2022 48 803 175 Électeurs inscrits ou réinscrits +4 537 637 Électeurs atteignant l'âge électoral +1 810 728 Inscriptions volontaires, dont : +2 594 636 Inscription en ligne +1 447 820 Électeurs ayant acquis la nationalité française +121 550 Autres situations 1 +10 723 Électeurs radiés des listes -4 001 098 Électeurs décédés -1 201 133 Électeurs radiés à l'initiative des communes -529 913 Électeurs radiés à la suite d’une nouvelle inscription -2 198 360 Autres situations 1 -71 692 Évolution +536 539 Nombre d'électeurs au 8 mai 2024 49 339 714 1. Décisions judiciaires, décisions de la commission de contrôle communale. Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique. Par ailleurs, 2,6 millions d’électeurs ont engagé une démarche volontaire d’inscription.
+                     Pour 2,2 millions d’entre eux, elle fait suite à un déménagement et entraîne une radiation
+                     des listes dans la commune de départ. Les communes ont également opéré des radiations
+                     pour perte d’attache communale (529 900 radiations pour ce motif entre mars 2022 et
+                     mai 2024) et les juridictions ou commissions de contrôle ont aussi fait procéder à
+                     des radiations ou inscriptions. L’ensemble de ces mouvements a conduit à une diminution
+                     de 194 600 inscrits. Sur les 1,1 million de citoyens européens majeurs établis en France, seuls 328 800 sont
+                     inscrits sur au moins une des deux listes complémentaires des communes leur permettant
+                     de voter dans un bureau de vote français. Les ressortissants d’un autre État membre
+                     de l’UE résidant en France peuvent voter à deux types d’élections : les élections
+                     municipales et les élections des représentants au Parlement européen. Ainsi, 269 100 électeurs
+                     européens sont inscrits sur les listes permettant de voter aux élections européennes. Parmi ces 269 100 électeurs européens inscrits pour voter en juin 2024, les Portugais
+                     sont les plus nombreux (88 500 inscrits), suivis par les Belges (42 100), les Italiens
+                     (39 800), les Allemands (30 200) et les Espagnols (27 500) ( figure 4 ). tableau Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                           par nationalité Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                                 par nationalité - Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes
+                                 complémentaires, 109 632 sont des électeurs de nationalité portugaise. Nationalité Ensemble dont : inscrits pour l’élection européenne 2024 Portugaise 109 632 88 459 Italienne 52 022 39 798 Belge 49 396 42 093 Allemande 34 524 30 242 Espagnole 33 272 27 452 Néerlandaise 17 637 14 389 Roumaine 6 655 5 081 Irlandaise 4 958 4 424 Polonaise 4 759 3 862 Suédoise 2 837 2 214 Danoise 2 258 1 961 Grecque 1 822 1 536 Autrichienne 1 780 1 449 Luxembourgeoise 1 640 1 381 Bulgare 1 161 1 015 Autres nationalités de l’UE 4 423 3 771 Ensemble 328 776 269 127 Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes complémentaires,
+                                 109 632 sont des électeurs de nationalité portugaise. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données au 8 mai 2024. Définitions Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes. Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats. Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales). L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+Consulter Documentation Consultation de la
+                  publication ou de la documentation qui lui est associée Consulter Documentation Début mai 2024, à la clôture des inscriptions pour les élections au Parlement européen,
+                     en France hors Nouvelle-Calédonie, 49,3 millions d’électeurs sont inscrits sur les
+                     listes électorales ( figure 1 ). Parmi eux, 47,4 millions sont des électeurs français inscrits sur une liste communale principale , 1,6 million sont inscrits sur une liste consulaire à l’étranger et 269 100 sont des ressortissants d’un autre État membre de l’Union européenne (UE)
+                     inscrits sur une liste complémentaire des communes . Avec les 222 000 électeurs de Nouvelle-Calédonie, le corps électoral pour les élections
+                     au Parlement européen compte 49,5 millions d’électeurs. Il en comptait 47,3 millions
+                     pour les élections européennes de 2019. tableau Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 - Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste
+                                 électorale en France, 47 445 283 sont inscrits sur une liste communale principale. Sexe Sur liste communale principale Sur listes communales complémentaires Sur liste consulaire Ensemble Sur liste municipale et européenne Sur liste municipale seule Sur liste européenne seule Femmes 24 779 118 125 692 28 849 7 594 788 231 25 729 484 Hommes 22 666 165 128 162 30 800 7 679 777 424 23 610 230 Ensemble 47 445 283 253 854 59 649 15 273 1 565 655 49 339 714 Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste électorale
+                                 en France, 47 445 283 sont inscrits sur une liste communale principale. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données du 8 mai 2024. Les Français résidant hors de France peuvent s’inscrire sur l’une des 213 listes consulaires.
+                     Cinq d’entre elles comptent plus de 50 000 électeurs : le poste consulaire de Genève
+                     gère la liste la plus importante (132 000 électeurs), suivi par ceux de Londres, Bruxelles,
+                     Montréal et Tel Aviv. En France métropolitaine et dans les DROM, 95 % des Français en âge de voter sont
+                     inscrits sur une liste électorale communale, comme pour l’élection présidentielle
+                     de 2022 ( figure 2 ). Tous les jeunes adultes (entre 18 et 24 ans) sont inscrits, du fait principalement
+                     de la procédure de l’inscription d’office des jeunes à 18 ans. Le taux d’inscription
+                     diminue ensuite avec l’âge et est plus faible pour les électeurs de 40 à 54 ans (91 %).
+                     En effet, tous les électeurs ne se réinscrivent pas sur la liste de leur nouvelle
+                     commune après un déménagement, alors qu’ils peuvent être radiés de l’ancienne liste
+                     par la mairie qui constate leur perte d’ attache communale . Au-delà de 54 ans, le taux d’inscription augmente pour atteindre 96 % aux âges de
+                     80 ans ou plus. tableau Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe en % Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe (en %) - Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 %
+                                 des femmes âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Âge Femmes Hommes Ensemble 18-24 ans 100 100 100 25-39 ans 96 98 97 40-54 ans 91 91 91 55-64 ans 93 93 93 65-79 ans 94 95 95 80 ans ou plus 95 97 96 Ensemble 94 95 95 Notes : L’âge est exprimé en âge révolu au 1 er avril 2024. Sont pris en compte uniquement les inscrits ayant 18 ans ou plus à cette
+                                 date. Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 % des femmes
+                                 âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Champ : France métropolitaine et DOM, population de nationalité française âgée de
+                                 18 ans ou plus au 1 er avril 2024. Source : Insee, estimations de population (données provisoires et arrêtées fin mars 2024) ;
+                                 Répertoire électoral unique, données au 8 mai 2024. Depuis l’élection présidentielle de 2022, le nombre d’inscrits sur les listes électorales
+                     (hors Nouvelle-Calédonie) a augmenté de 536 500 personnes (+1,1 %) ( figure 3 ). Parmi les électeurs français, 1,8 million de jeunes nés entre mi-2004 et début 2006,
+                     atteignant 18 ans, ont été inscrits d’office au cours de cette période, alors que
+                     1,2 million de décès ont entraîné des radiations des listes, soit un solde net de
+                     +609 600 inscrits. À cela s’ajoutent 121 600 inscriptions d’office liées à l’acquisition
+                     de la nationalité française. Les mouvements démographiques naturels et les acquisitions
+                     de nationalité conduisent ainsi à une hausse de 731 100 électeurs. tableau Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 - Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Type d'inscription ou de radiation Évolution depuis le 9 mars 2022 Nombre d'électeurs au 9 mars 2022 48 803 175 Électeurs inscrits ou réinscrits +4 537 637 Électeurs atteignant l'âge électoral +1 810 728 Inscriptions volontaires, dont : +2 594 636 Inscription en ligne +1 447 820 Électeurs ayant acquis la nationalité française +121 550 Autres situations 1 +10 723 Électeurs radiés des listes -4 001 098 Électeurs décédés -1 201 133 Électeurs radiés à l'initiative des communes -529 913 Électeurs radiés à la suite d’une nouvelle inscription -2 198 360 Autres situations 1 -71 692 Évolution +536 539 Nombre d'électeurs au 8 mai 2024 49 339 714 1. Décisions judiciaires, décisions de la commission de contrôle communale. Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique. Par ailleurs, 2,6 millions d’électeurs ont engagé une démarche volontaire d’inscription.
+                     Pour 2,2 millions d’entre eux, elle fait suite à un déménagement et entraîne une radiation
+                     des listes dans la commune de départ. Les communes ont également opéré des radiations
+                     pour perte d’attache communale (529 900 radiations pour ce motif entre mars 2022 et
+                     mai 2024) et les juridictions ou commissions de contrôle ont aussi fait procéder à
+                     des radiations ou inscriptions. L’ensemble de ces mouvements a conduit à une diminution
+                     de 194 600 inscrits. Sur les 1,1 million de citoyens européens majeurs établis en France, seuls 328 800 sont
+                     inscrits sur au moins une des deux listes complémentaires des communes leur permettant
+                     de voter dans un bureau de vote français. Les ressortissants d’un autre État membre
+                     de l’UE résidant en France peuvent voter à deux types d’élections : les élections
+                     municipales et les élections des représentants au Parlement européen. Ainsi, 269 100 électeurs
+                     européens sont inscrits sur les listes permettant de voter aux élections européennes. Parmi ces 269 100 électeurs européens inscrits pour voter en juin 2024, les Portugais
+                     sont les plus nombreux (88 500 inscrits), suivis par les Belges (42 100), les Italiens
+                     (39 800), les Allemands (30 200) et les Espagnols (27 500) ( figure 4 ). tableau Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                           par nationalité Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                                 par nationalité - Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes
+                                 complémentaires, 109 632 sont des électeurs de nationalité portugaise. Nationalité Ensemble dont : inscrits pour l’élection européenne 2024 Portugaise 109 632 88 459 Italienne 52 022 39 798 Belge 49 396 42 093 Allemande 34 524 30 242 Espagnole 33 272 27 452 Néerlandaise 17 637 14 389 Roumaine 6 655 5 081 Irlandaise 4 958 4 424 Polonaise 4 759 3 862 Suédoise 2 837 2 214 Danoise 2 258 1 961 Grecque 1 822 1 536 Autrichienne 1 780 1 449 Luxembourgeoise 1 640 1 381 Bulgare 1 161 1 015 Autres nationalités de l’UE 4 423 3 771 Ensemble 328 776 269 127 Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes complémentaires,
+                                 109 632 sont des électeurs de nationalité portugaise. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données au 8 mai 2024. Définitions Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes. Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats. Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales). L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+- Consulter
+- Documentation
+Consultation de la
+                  publication ou de la documentation qui lui est associée Consulter Documentation
+Début mai 2024, à la clôture des inscriptions pour les élections au Parlement européen,
+                     en France hors Nouvelle-Calédonie, 49,3 millions d’électeurs sont inscrits sur les
+                     listes électorales ( figure 1 ). Parmi eux, 47,4 millions sont des électeurs français inscrits sur une liste communale principale , 1,6 million sont inscrits sur une liste consulaire à l’étranger et 269 100 sont des ressortissants d’un autre État membre de l’Union européenne (UE)
+                     inscrits sur une liste complémentaire des communes . Avec les 222 000 électeurs de Nouvelle-Calédonie, le corps électoral pour les élections
+                     au Parlement européen compte 49,5 millions d’électeurs. Il en comptait 47,3 millions
+                     pour les élections européennes de 2019. tableau Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 - Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste
+                                 électorale en France, 47 445 283 sont inscrits sur une liste communale principale. Sexe Sur liste communale principale Sur listes communales complémentaires Sur liste consulaire Ensemble Sur liste municipale et européenne Sur liste municipale seule Sur liste européenne seule Femmes 24 779 118 125 692 28 849 7 594 788 231 25 729 484 Hommes 22 666 165 128 162 30 800 7 679 777 424 23 610 230 Ensemble 47 445 283 253 854 59 649 15 273 1 565 655 49 339 714 Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste électorale
+                                 en France, 47 445 283 sont inscrits sur une liste communale principale. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données du 8 mai 2024. Les Français résidant hors de France peuvent s’inscrire sur l’une des 213 listes consulaires.
+                     Cinq d’entre elles comptent plus de 50 000 électeurs : le poste consulaire de Genève
+                     gère la liste la plus importante (132 000 électeurs), suivi par ceux de Londres, Bruxelles,
+                     Montréal et Tel Aviv. En France métropolitaine et dans les DROM, 95 % des Français en âge de voter sont
+                     inscrits sur une liste électorale communale, comme pour l’élection présidentielle
+                     de 2022 ( figure 2 ). Tous les jeunes adultes (entre 18 et 24 ans) sont inscrits, du fait principalement
+                     de la procédure de l’inscription d’office des jeunes à 18 ans. Le taux d’inscription
+                     diminue ensuite avec l’âge et est plus faible pour les électeurs de 40 à 54 ans (91 %).
+                     En effet, tous les électeurs ne se réinscrivent pas sur la liste de leur nouvelle
+                     commune après un déménagement, alors qu’ils peuvent être radiés de l’ancienne liste
+                     par la mairie qui constate leur perte d’ attache communale . Au-delà de 54 ans, le taux d’inscription augmente pour atteindre 96 % aux âges de
+                     80 ans ou plus. tableau Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe en % Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe (en %) - Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 %
+                                 des femmes âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Âge Femmes Hommes Ensemble 18-24 ans 100 100 100 25-39 ans 96 98 97 40-54 ans 91 91 91 55-64 ans 93 93 93 65-79 ans 94 95 95 80 ans ou plus 95 97 96 Ensemble 94 95 95 Notes : L’âge est exprimé en âge révolu au 1 er avril 2024. Sont pris en compte uniquement les inscrits ayant 18 ans ou plus à cette
+                                 date. Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 % des femmes
+                                 âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Champ : France métropolitaine et DOM, population de nationalité française âgée de
+                                 18 ans ou plus au 1 er avril 2024. Source : Insee, estimations de population (données provisoires et arrêtées fin mars 2024) ;
+                                 Répertoire électoral unique, données au 8 mai 2024. Depuis l’élection présidentielle de 2022, le nombre d’inscrits sur les listes électorales
+                     (hors Nouvelle-Calédonie) a augmenté de 536 500 personnes (+1,1 %) ( figure 3 ). Parmi les électeurs français, 1,8 million de jeunes nés entre mi-2004 et début 2006,
+                     atteignant 18 ans, ont été inscrits d’office au cours de cette période, alors que
+                     1,2 million de décès ont entraîné des radiations des listes, soit un solde net de
+                     +609 600 inscrits. À cela s’ajoutent 121 600 inscriptions d’office liées à l’acquisition
+                     de la nationalité française. Les mouvements démographiques naturels et les acquisitions
+                     de nationalité conduisent ainsi à une hausse de 731 100 électeurs. tableau Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 - Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Type d'inscription ou de radiation Évolution depuis le 9 mars 2022 Nombre d'électeurs au 9 mars 2022 48 803 175 Électeurs inscrits ou réinscrits +4 537 637 Électeurs atteignant l'âge électoral +1 810 728 Inscriptions volontaires, dont : +2 594 636 Inscription en ligne +1 447 820 Électeurs ayant acquis la nationalité française +121 550 Autres situations 1 +10 723 Électeurs radiés des listes -4 001 098 Électeurs décédés -1 201 133 Électeurs radiés à l'initiative des communes -529 913 Électeurs radiés à la suite d’une nouvelle inscription -2 198 360 Autres situations 1 -71 692 Évolution +536 539 Nombre d'électeurs au 8 mai 2024 49 339 714 1. Décisions judiciaires, décisions de la commission de contrôle communale. Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique. Par ailleurs, 2,6 millions d’électeurs ont engagé une démarche volontaire d’inscription.
+                     Pour 2,2 millions d’entre eux, elle fait suite à un déménagement et entraîne une radiation
+                     des listes dans la commune de départ. Les communes ont également opéré des radiations
+                     pour perte d’attache communale (529 900 radiations pour ce motif entre mars 2022 et
+                     mai 2024) et les juridictions ou commissions de contrôle ont aussi fait procéder à
+                     des radiations ou inscriptions. L’ensemble de ces mouvements a conduit à une diminution
+                     de 194 600 inscrits. Sur les 1,1 million de citoyens européens majeurs établis en France, seuls 328 800 sont
+                     inscrits sur au moins une des deux listes complémentaires des communes leur permettant
+                     de voter dans un bureau de vote français. Les ressortissants d’un autre État membre
+                     de l’UE résidant en France peuvent voter à deux types d’élections : les élections
+                     municipales et les élections des représentants au Parlement européen. Ainsi, 269 100 électeurs
+                     européens sont inscrits sur les listes permettant de voter aux élections européennes. Parmi ces 269 100 électeurs européens inscrits pour voter en juin 2024, les Portugais
+                     sont les plus nombreux (88 500 inscrits), suivis par les Belges (42 100), les Italiens
+                     (39 800), les Allemands (30 200) et les Espagnols (27 500) ( figure 4 ). tableau Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                           par nationalité Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                                 par nationalité - Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes
+                                 complémentaires, 109 632 sont des électeurs de nationalité portugaise. Nationalité Ensemble dont : inscrits pour l’élection européenne 2024 Portugaise 109 632 88 459 Italienne 52 022 39 798 Belge 49 396 42 093 Allemande 34 524 30 242 Espagnole 33 272 27 452 Néerlandaise 17 637 14 389 Roumaine 6 655 5 081 Irlandaise 4 958 4 424 Polonaise 4 759 3 862 Suédoise 2 837 2 214 Danoise 2 258 1 961 Grecque 1 822 1 536 Autrichienne 1 780 1 449 Luxembourgeoise 1 640 1 381 Bulgare 1 161 1 015 Autres nationalités de l’UE 4 423 3 771 Ensemble 328 776 269 127 Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes complémentaires,
+                                 109 632 sont des électeurs de nationalité portugaise. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données au 8 mai 2024.
+Début mai 2024, à la clôture des inscriptions pour les élections au Parlement européen,
+                     en France hors Nouvelle-Calédonie, 49,3 millions d’électeurs sont inscrits sur les
+                     listes électorales ( figure 1 ). Parmi eux, 47,4 millions sont des électeurs français inscrits sur une liste communale principale , 1,6 million sont inscrits sur une liste consulaire à l’étranger et 269 100 sont des ressortissants d’un autre État membre de l’Union européenne (UE)
+                     inscrits sur une liste complémentaire des communes . Avec les 222 000 électeurs de Nouvelle-Calédonie, le corps électoral pour les élections
+                     au Parlement européen compte 49,5 millions d’électeurs. Il en comptait 47,3 millions
+                     pour les élections européennes de 2019. tableau Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 - Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste
+                                 électorale en France, 47 445 283 sont inscrits sur une liste communale principale. Sexe Sur liste communale principale Sur listes communales complémentaires Sur liste consulaire Ensemble Sur liste municipale et européenne Sur liste municipale seule Sur liste européenne seule Femmes 24 779 118 125 692 28 849 7 594 788 231 25 729 484 Hommes 22 666 165 128 162 30 800 7 679 777 424 23 610 230 Ensemble 47 445 283 253 854 59 649 15 273 1 565 655 49 339 714 Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste électorale
+                                 en France, 47 445 283 sont inscrits sur une liste communale principale. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données du 8 mai 2024. Les Français résidant hors de France peuvent s’inscrire sur l’une des 213 listes consulaires.
+                     Cinq d’entre elles comptent plus de 50 000 électeurs : le poste consulaire de Genève
+                     gère la liste la plus importante (132 000 électeurs), suivi par ceux de Londres, Bruxelles,
+                     Montréal et Tel Aviv. En France métropolitaine et dans les DROM, 95 % des Français en âge de voter sont
+                     inscrits sur une liste électorale communale, comme pour l’élection présidentielle
+                     de 2022 ( figure 2 ). Tous les jeunes adultes (entre 18 et 24 ans) sont inscrits, du fait principalement
+                     de la procédure de l’inscription d’office des jeunes à 18 ans. Le taux d’inscription
+                     diminue ensuite avec l’âge et est plus faible pour les électeurs de 40 à 54 ans (91 %).
+                     En effet, tous les électeurs ne se réinscrivent pas sur la liste de leur nouvelle
+                     commune après un déménagement, alors qu’ils peuvent être radiés de l’ancienne liste
+                     par la mairie qui constate leur perte d’ attache communale . Au-delà de 54 ans, le taux d’inscription augmente pour atteindre 96 % aux âges de
+                     80 ans ou plus. tableau Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe en % Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe (en %) - Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 %
+                                 des femmes âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Âge Femmes Hommes Ensemble 18-24 ans 100 100 100 25-39 ans 96 98 97 40-54 ans 91 91 91 55-64 ans 93 93 93 65-79 ans 94 95 95 80 ans ou plus 95 97 96 Ensemble 94 95 95 Notes : L’âge est exprimé en âge révolu au 1 er avril 2024. Sont pris en compte uniquement les inscrits ayant 18 ans ou plus à cette
+                                 date. Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 % des femmes
+                                 âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Champ : France métropolitaine et DOM, population de nationalité française âgée de
+                                 18 ans ou plus au 1 er avril 2024. Source : Insee, estimations de population (données provisoires et arrêtées fin mars 2024) ;
+                                 Répertoire électoral unique, données au 8 mai 2024. Depuis l’élection présidentielle de 2022, le nombre d’inscrits sur les listes électorales
+                     (hors Nouvelle-Calédonie) a augmenté de 536 500 personnes (+1,1 %) ( figure 3 ). Parmi les électeurs français, 1,8 million de jeunes nés entre mi-2004 et début 2006,
+                     atteignant 18 ans, ont été inscrits d’office au cours de cette période, alors que
+                     1,2 million de décès ont entraîné des radiations des listes, soit un solde net de
+                     +609 600 inscrits. À cela s’ajoutent 121 600 inscriptions d’office liées à l’acquisition
+                     de la nationalité française. Les mouvements démographiques naturels et les acquisitions
+                     de nationalité conduisent ainsi à une hausse de 731 100 électeurs. tableau Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 - Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Type d'inscription ou de radiation Évolution depuis le 9 mars 2022 Nombre d'électeurs au 9 mars 2022 48 803 175 Électeurs inscrits ou réinscrits +4 537 637 Électeurs atteignant l'âge électoral +1 810 728 Inscriptions volontaires, dont : +2 594 636 Inscription en ligne +1 447 820 Électeurs ayant acquis la nationalité française +121 550 Autres situations 1 +10 723 Électeurs radiés des listes -4 001 098 Électeurs décédés -1 201 133 Électeurs radiés à l'initiative des communes -529 913 Électeurs radiés à la suite d’une nouvelle inscription -2 198 360 Autres situations 1 -71 692 Évolution +536 539 Nombre d'électeurs au 8 mai 2024 49 339 714 1. Décisions judiciaires, décisions de la commission de contrôle communale. Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique. Par ailleurs, 2,6 millions d’électeurs ont engagé une démarche volontaire d’inscription.
+                     Pour 2,2 millions d’entre eux, elle fait suite à un déménagement et entraîne une radiation
+                     des listes dans la commune de départ. Les communes ont également opéré des radiations
+                     pour perte d’attache communale (529 900 radiations pour ce motif entre mars 2022 et
+                     mai 2024) et les juridictions ou commissions de contrôle ont aussi fait procéder à
+                     des radiations ou inscriptions. L’ensemble de ces mouvements a conduit à une diminution
+                     de 194 600 inscrits. Sur les 1,1 million de citoyens européens majeurs établis en France, seuls 328 800 sont
+                     inscrits sur au moins une des deux listes complémentaires des communes leur permettant
+                     de voter dans un bureau de vote français. Les ressortissants d’un autre État membre
+                     de l’UE résidant en France peuvent voter à deux types d’élections : les élections
+                     municipales et les élections des représentants au Parlement européen. Ainsi, 269 100 électeurs
+                     européens sont inscrits sur les listes permettant de voter aux élections européennes. Parmi ces 269 100 électeurs européens inscrits pour voter en juin 2024, les Portugais
+                     sont les plus nombreux (88 500 inscrits), suivis par les Belges (42 100), les Italiens
+                     (39 800), les Allemands (30 200) et les Espagnols (27 500) ( figure 4 ). tableau Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                           par nationalité Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                                 par nationalité - Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes
+                                 complémentaires, 109 632 sont des électeurs de nationalité portugaise. Nationalité Ensemble dont : inscrits pour l’élection européenne 2024 Portugaise 109 632 88 459 Italienne 52 022 39 798 Belge 49 396 42 093 Allemande 34 524 30 242 Espagnole 33 272 27 452 Néerlandaise 17 637 14 389 Roumaine 6 655 5 081 Irlandaise 4 958 4 424 Polonaise 4 759 3 862 Suédoise 2 837 2 214 Danoise 2 258 1 961 Grecque 1 822 1 536 Autrichienne 1 780 1 449 Luxembourgeoise 1 640 1 381 Bulgare 1 161 1 015 Autres nationalités de l’UE 4 423 3 771 Ensemble 328 776 269 127 Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes complémentaires,
+                                 109 632 sont des électeurs de nationalité portugaise. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données au 8 mai 2024.
+Début mai 2024, à la clôture des inscriptions pour les élections au Parlement européen,
+                     en France hors Nouvelle-Calédonie, 49,3 millions d’électeurs sont inscrits sur les
+                     listes électorales ( figure 1 ). Parmi eux, 47,4 millions sont des électeurs français inscrits sur une liste communale principale , 1,6 million sont inscrits sur une liste consulaire à l’étranger et 269 100 sont des ressortissants d’un autre État membre de l’Union européenne (UE)
+                     inscrits sur une liste complémentaire des communes . Avec les 222 000 électeurs de Nouvelle-Calédonie, le corps électoral pour les élections
+                     au Parlement européen compte 49,5 millions d’électeurs. Il en comptait 47,3 millions
+                     pour les élections européennes de 2019.
+Début mai 2024, à la clôture des inscriptions pour les élections au Parlement européen,
+                     en France hors Nouvelle-Calédonie, 49,3 millions d’électeurs sont inscrits sur les
+                     listes électorales ( figure 1 ). Parmi eux, 47,4 millions sont des électeurs français inscrits sur une liste communale principale , 1,6 million sont inscrits sur une liste consulaire à l’étranger et 269 100 sont des ressortissants d’un autre État membre de l’Union européenne (UE)
+                     inscrits sur une liste complémentaire des communes . Avec les 222 000 électeurs de Nouvelle-Calédonie, le corps électoral pour les élections
+                     au Parlement européen compte 49,5 millions d’électeurs. Il en comptait 47,3 millions
+                     pour les élections européennes de 2019.
+tableau Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 - Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste
+                                 électorale en France, 47 445 283 sont inscrits sur une liste communale principale. Sexe Sur liste communale principale Sur listes communales complémentaires Sur liste consulaire Ensemble Sur liste municipale et européenne Sur liste municipale seule Sur liste européenne seule Femmes 24 779 118 125 692 28 849 7 594 788 231 25 729 484 Hommes 22 666 165 128 162 30 800 7 679 777 424 23 610 230 Ensemble 47 445 283 253 854 59 649 15 273 1 565 655 49 339 714 Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste électorale
+                                 en France, 47 445 283 sont inscrits sur une liste communale principale. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données du 8 mai 2024.
+tableau Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 - Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste
+                                 électorale en France, 47 445 283 sont inscrits sur une liste communale principale. Sexe Sur liste communale principale Sur listes communales complémentaires Sur liste consulaire Ensemble Sur liste municipale et européenne Sur liste municipale seule Sur liste européenne seule Femmes 24 779 118 125 692 28 849 7 594 788 231 25 729 484 Hommes 22 666 165 128 162 30 800 7 679 777 424 23 610 230 Ensemble 47 445 283 253 854 59 649 15 273 1 565 655 49 339 714 Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste électorale
+                                 en France, 47 445 283 sont inscrits sur une liste communale principale. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données du 8 mai 2024.
+
+### tableau Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024
+
+Figure 1 – Nombre d’électeurs inscrits au 8 mai 2024 - Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste
+                                 électorale en France, 47 445 283 sont inscrits sur une liste communale principale. Sexe Sur liste communale principale Sur listes communales complémentaires Sur liste consulaire Ensemble Sur liste municipale et européenne Sur liste municipale seule Sur liste européenne seule Femmes 24 779 118 125 692 28 849 7 594 788 231 25 729 484 Hommes 22 666 165 128 162 30 800 7 679 777 424 23 610 230 Ensemble 47 445 283 253 854 59 649 15 273 1 565 655 49 339 714
+Sexe
+Sur liste communale principale
+Sur listes communales complémentaires
+Sur liste consulaire
+Ensemble
+Sur liste municipale et européenne
+Sur liste municipale seule
+Sur liste européenne seule
+Femmes
+24 779 118
+125 692
+28 849
+7 594
+788 231
+25 729 484
+Hommes
+22 666 165
+128 162
+30 800
+7 679
+777 424
+23 610 230
+Ensemble
+47 445 283
+253 854
+59 649
+15 273
+1 565 655
+49 339 714
+- Lecture : Au 8 mai 2024, parmi les 49 339 714 électeurs inscrits sur une liste électorale
+                                 en France, 47 445 283 sont inscrits sur une liste communale principale.
+- Champ : France hors Nouvelle-Calédonie.
+- Source : Insee, Répertoire électoral unique, données du 8 mai 2024.
+Les Français résidant hors de France peuvent s’inscrire sur l’une des 213 listes consulaires.
+                     Cinq d’entre elles comptent plus de 50 000 électeurs : le poste consulaire de Genève
+                     gère la liste la plus importante (132 000 électeurs), suivi par ceux de Londres, Bruxelles,
+                     Montréal et Tel Aviv. En France métropolitaine et dans les DROM, 95 % des Français en âge de voter sont
+                     inscrits sur une liste électorale communale, comme pour l’élection présidentielle
+                     de 2022 ( figure 2 ). Tous les jeunes adultes (entre 18 et 24 ans) sont inscrits, du fait principalement
+                     de la procédure de l’inscription d’office des jeunes à 18 ans. Le taux d’inscription
+                     diminue ensuite avec l’âge et est plus faible pour les électeurs de 40 à 54 ans (91 %).
+                     En effet, tous les électeurs ne se réinscrivent pas sur la liste de leur nouvelle
+                     commune après un déménagement, alors qu’ils peuvent être radiés de l’ancienne liste
+                     par la mairie qui constate leur perte d’ attache communale . Au-delà de 54 ans, le taux d’inscription augmente pour atteindre 96 % aux âges de
+                     80 ans ou plus.
+Les Français résidant hors de France peuvent s’inscrire sur l’une des 213 listes consulaires.
+                     Cinq d’entre elles comptent plus de 50 000 électeurs : le poste consulaire de Genève
+                     gère la liste la plus importante (132 000 électeurs), suivi par ceux de Londres, Bruxelles,
+                     Montréal et Tel Aviv.
+En France métropolitaine et dans les DROM, 95 % des Français en âge de voter sont
+                     inscrits sur une liste électorale communale, comme pour l’élection présidentielle
+                     de 2022 ( figure 2 ). Tous les jeunes adultes (entre 18 et 24 ans) sont inscrits, du fait principalement
+                     de la procédure de l’inscription d’office des jeunes à 18 ans. Le taux d’inscription
+                     diminue ensuite avec l’âge et est plus faible pour les électeurs de 40 à 54 ans (91 %).
+                     En effet, tous les électeurs ne se réinscrivent pas sur la liste de leur nouvelle
+                     commune après un déménagement, alors qu’ils peuvent être radiés de l’ancienne liste
+                     par la mairie qui constate leur perte d’ attache communale . Au-delà de 54 ans, le taux d’inscription augmente pour atteindre 96 % aux âges de
+                     80 ans ou plus.
+tableau Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe en % Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe (en %) - Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 %
+                                 des femmes âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Âge Femmes Hommes Ensemble 18-24 ans 100 100 100 25-39 ans 96 98 97 40-54 ans 91 91 91 55-64 ans 93 93 93 65-79 ans 94 95 95 80 ans ou plus 95 97 96 Ensemble 94 95 95 Notes : L’âge est exprimé en âge révolu au 1 er avril 2024. Sont pris en compte uniquement les inscrits ayant 18 ans ou plus à cette
+                                 date. Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 % des femmes
+                                 âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Champ : France métropolitaine et DOM, population de nationalité française âgée de
+                                 18 ans ou plus au 1 er avril 2024. Source : Insee, estimations de population (données provisoires et arrêtées fin mars 2024) ;
+                                 Répertoire électoral unique, données au 8 mai 2024.
+tableau Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe en % Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe (en %) - Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 %
+                                 des femmes âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Âge Femmes Hommes Ensemble 18-24 ans 100 100 100 25-39 ans 96 98 97 40-54 ans 91 91 91 55-64 ans 93 93 93 65-79 ans 94 95 95 80 ans ou plus 95 97 96 Ensemble 94 95 95 Notes : L’âge est exprimé en âge révolu au 1 er avril 2024. Sont pris en compte uniquement les inscrits ayant 18 ans ou plus à cette
+                                 date. Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 % des femmes
+                                 âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Champ : France métropolitaine et DOM, population de nationalité française âgée de
+                                 18 ans ou plus au 1 er avril 2024. Source : Insee, estimations de population (données provisoires et arrêtées fin mars 2024) ;
+                                 Répertoire électoral unique, données au 8 mai 2024.
+
+### tableau Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe
+
+en % Figure 2 – Taux d’inscription sur liste principale selon l’âge et le sexe (en %) - Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 %
+                                 des femmes âgées de 25 à 39 ans sont inscrites sur une liste électorale principale. Âge Femmes Hommes Ensemble 18-24 ans 100 100 100 25-39 ans 96 98 97 40-54 ans 91 91 91 55-64 ans 93 93 93 65-79 ans 94 95 95 80 ans ou plus 95 97 96 Ensemble 94 95 95
+en %
+Âge
+Femmes
+Hommes
+Ensemble
+18-24 ans
+100
+100
+100
+25-39 ans
+40-54 ans
+55-64 ans
+65-79 ans
+80 ans ou plus
+Ensemble
+- Notes : L’âge est exprimé en âge révolu au 1 er avril 2024. Sont pris en compte uniquement les inscrits ayant 18 ans ou plus à cette
+                                 date.
+- Lecture : En France métropolitaine et dans les DOM, le 8 mai 2024, 96 % des femmes
+                                 âgées de 25 à 39 ans sont inscrites sur une liste électorale principale.
+- Champ : France métropolitaine et DOM, population de nationalité française âgée de
+                                 18 ans ou plus au 1 er avril 2024.
+- Source : Insee, estimations de population (données provisoires et arrêtées fin mars 2024) ;
+                                 Répertoire électoral unique, données au 8 mai 2024.
+Depuis l’élection présidentielle de 2022, le nombre d’inscrits sur les listes électorales
+                     (hors Nouvelle-Calédonie) a augmenté de 536 500 personnes (+1,1 %) ( figure 3 ). Parmi les électeurs français, 1,8 million de jeunes nés entre mi-2004 et début 2006,
+                     atteignant 18 ans, ont été inscrits d’office au cours de cette période, alors que
+                     1,2 million de décès ont entraîné des radiations des listes, soit un solde net de
+                     +609 600 inscrits. À cela s’ajoutent 121 600 inscriptions d’office liées à l’acquisition
+                     de la nationalité française. Les mouvements démographiques naturels et les acquisitions
+                     de nationalité conduisent ainsi à une hausse de 731 100 électeurs.
+Depuis l’élection présidentielle de 2022, le nombre d’inscrits sur les listes électorales
+                     (hors Nouvelle-Calédonie) a augmenté de 536 500 personnes (+1,1 %) ( figure 3 ). Parmi les électeurs français, 1,8 million de jeunes nés entre mi-2004 et début 2006,
+                     atteignant 18 ans, ont été inscrits d’office au cours de cette période, alors que
+                     1,2 million de décès ont entraîné des radiations des listes, soit un solde net de
+                     +609 600 inscrits. À cela s’ajoutent 121 600 inscriptions d’office liées à l’acquisition
+                     de la nationalité française. Les mouvements démographiques naturels et les acquisitions
+                     de nationalité conduisent ainsi à une hausse de 731 100 électeurs.
+tableau Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 - Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Type d'inscription ou de radiation Évolution depuis le 9 mars 2022 Nombre d'électeurs au 9 mars 2022 48 803 175 Électeurs inscrits ou réinscrits +4 537 637 Électeurs atteignant l'âge électoral +1 810 728 Inscriptions volontaires, dont : +2 594 636 Inscription en ligne +1 447 820 Électeurs ayant acquis la nationalité française +121 550 Autres situations 1 +10 723 Électeurs radiés des listes -4 001 098 Électeurs décédés -1 201 133 Électeurs radiés à l'initiative des communes -529 913 Électeurs radiés à la suite d’une nouvelle inscription -2 198 360 Autres situations 1 -71 692 Évolution +536 539 Nombre d'électeurs au 8 mai 2024 49 339 714 1. Décisions judiciaires, décisions de la commission de contrôle communale. Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique.
+tableau Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 - Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Type d'inscription ou de radiation Évolution depuis le 9 mars 2022 Nombre d'électeurs au 9 mars 2022 48 803 175 Électeurs inscrits ou réinscrits +4 537 637 Électeurs atteignant l'âge électoral +1 810 728 Inscriptions volontaires, dont : +2 594 636 Inscription en ligne +1 447 820 Électeurs ayant acquis la nationalité française +121 550 Autres situations 1 +10 723 Électeurs radiés des listes -4 001 098 Électeurs décédés -1 201 133 Électeurs radiés à l'initiative des communes -529 913 Électeurs radiés à la suite d’une nouvelle inscription -2 198 360 Autres situations 1 -71 692 Évolution +536 539 Nombre d'électeurs au 8 mai 2024 49 339 714 1. Décisions judiciaires, décisions de la commission de contrôle communale. Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique.
+
+### tableau Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022
+
+Figure 3 – Inscriptions et radiations depuis l’élection présidentielle de 2022 - Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires. Type d'inscription ou de radiation Évolution depuis le 9 mars 2022 Nombre d'électeurs au 9 mars 2022 48 803 175 Électeurs inscrits ou réinscrits +4 537 637 Électeurs atteignant l'âge électoral +1 810 728 Inscriptions volontaires, dont : +2 594 636 Inscription en ligne +1 447 820 Électeurs ayant acquis la nationalité française +121 550 Autres situations 1 +10 723 Électeurs radiés des listes -4 001 098 Électeurs décédés -1 201 133 Électeurs radiés à l'initiative des communes -529 913 Électeurs radiés à la suite d’une nouvelle inscription -2 198 360 Autres situations 1 -71 692 Évolution +536 539 Nombre d'électeurs au 8 mai 2024 49 339 714
+Type d'inscription ou de radiation
+Évolution depuis le 9 mars 2022
+Nombre d'électeurs au 9 mars 2022
+48 803 175
+Électeurs inscrits ou réinscrits
++4 537 637
+Électeurs atteignant l'âge électoral
++1 810 728
+Inscriptions volontaires, dont :
++2 594 636
+Inscription en ligne
++1 447 820
+Électeurs ayant acquis la nationalité française
++121 550
+Autres situations 1
++10 723
+Électeurs radiés des listes
+-4 001 098
+Électeurs décédés
+-1 201 133
+Électeurs radiés à l'initiative des communes
+-529 913
+Électeurs radiés à la suite d’une nouvelle inscription
+-2 198 360
+Autres situations 1
+-71 692
+Évolution
++536 539
+Nombre d'électeurs au 8 mai 2024
+49 339 714
+- 1. Décisions judiciaires, décisions de la commission de contrôle communale.
+- Lecture : Au 8 mai 2024, parmi les 4 537 637 électeurs inscrits ou réinscrits en France,
+                                 2 594 636 sont des inscriptions volontaires.
+- Champ : France hors Nouvelle-Calédonie.
+- Source : Insee, Répertoire électoral unique.
+Par ailleurs, 2,6 millions d’électeurs ont engagé une démarche volontaire d’inscription.
+                     Pour 2,2 millions d’entre eux, elle fait suite à un déménagement et entraîne une radiation
+                     des listes dans la commune de départ. Les communes ont également opéré des radiations
+                     pour perte d’attache communale (529 900 radiations pour ce motif entre mars 2022 et
+                     mai 2024) et les juridictions ou commissions de contrôle ont aussi fait procéder à
+                     des radiations ou inscriptions. L’ensemble de ces mouvements a conduit à une diminution
+                     de 194 600 inscrits. Sur les 1,1 million de citoyens européens majeurs établis en France, seuls 328 800 sont
+                     inscrits sur au moins une des deux listes complémentaires des communes leur permettant
+                     de voter dans un bureau de vote français. Les ressortissants d’un autre État membre
+                     de l’UE résidant en France peuvent voter à deux types d’élections : les élections
+                     municipales et les élections des représentants au Parlement européen. Ainsi, 269 100 électeurs
+                     européens sont inscrits sur les listes permettant de voter aux élections européennes. Parmi ces 269 100 électeurs européens inscrits pour voter en juin 2024, les Portugais
+                     sont les plus nombreux (88 500 inscrits), suivis par les Belges (42 100), les Italiens
+                     (39 800), les Allemands (30 200) et les Espagnols (27 500) ( figure 4 ).
+Par ailleurs, 2,6 millions d’électeurs ont engagé une démarche volontaire d’inscription.
+                     Pour 2,2 millions d’entre eux, elle fait suite à un déménagement et entraîne une radiation
+                     des listes dans la commune de départ. Les communes ont également opéré des radiations
+                     pour perte d’attache communale (529 900 radiations pour ce motif entre mars 2022 et
+                     mai 2024) et les juridictions ou commissions de contrôle ont aussi fait procéder à
+                     des radiations ou inscriptions. L’ensemble de ces mouvements a conduit à une diminution
+                     de 194 600 inscrits.
+Sur les 1,1 million de citoyens européens majeurs établis en France, seuls 328 800 sont
+                     inscrits sur au moins une des deux listes complémentaires des communes leur permettant
+                     de voter dans un bureau de vote français. Les ressortissants d’un autre État membre
+                     de l’UE résidant en France peuvent voter à deux types d’élections : les élections
+                     municipales et les élections des représentants au Parlement européen. Ainsi, 269 100 électeurs
+                     européens sont inscrits sur les listes permettant de voter aux élections européennes.
+Parmi ces 269 100 électeurs européens inscrits pour voter en juin 2024, les Portugais
+                     sont les plus nombreux (88 500 inscrits), suivis par les Belges (42 100), les Italiens
+                     (39 800), les Allemands (30 200) et les Espagnols (27 500) ( figure 4 ).
+tableau Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                           par nationalité Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                                 par nationalité - Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes
+                                 complémentaires, 109 632 sont des électeurs de nationalité portugaise. Nationalité Ensemble dont : inscrits pour l’élection européenne 2024 Portugaise 109 632 88 459 Italienne 52 022 39 798 Belge 49 396 42 093 Allemande 34 524 30 242 Espagnole 33 272 27 452 Néerlandaise 17 637 14 389 Roumaine 6 655 5 081 Irlandaise 4 958 4 424 Polonaise 4 759 3 862 Suédoise 2 837 2 214 Danoise 2 258 1 961 Grecque 1 822 1 536 Autrichienne 1 780 1 449 Luxembourgeoise 1 640 1 381 Bulgare 1 161 1 015 Autres nationalités de l’UE 4 423 3 771 Ensemble 328 776 269 127 Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes complémentaires,
+                                 109 632 sont des électeurs de nationalité portugaise. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données au 8 mai 2024.
+tableau Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                           par nationalité Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                                 par nationalité - Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes
+                                 complémentaires, 109 632 sont des électeurs de nationalité portugaise. Nationalité Ensemble dont : inscrits pour l’élection européenne 2024 Portugaise 109 632 88 459 Italienne 52 022 39 798 Belge 49 396 42 093 Allemande 34 524 30 242 Espagnole 33 272 27 452 Néerlandaise 17 637 14 389 Roumaine 6 655 5 081 Irlandaise 4 958 4 424 Polonaise 4 759 3 862 Suédoise 2 837 2 214 Danoise 2 258 1 961 Grecque 1 822 1 536 Autrichienne 1 780 1 449 Luxembourgeoise 1 640 1 381 Bulgare 1 161 1 015 Autres nationalités de l’UE 4 423 3 771 Ensemble 328 776 269 127 Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes complémentaires,
+                                 109 632 sont des électeurs de nationalité portugaise. Champ : France hors Nouvelle-Calédonie. Source : Insee, Répertoire électoral unique, données au 8 mai 2024.
+
+### tableau Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                           par nationalité
+
+Figure 4 – Nombre d’électeurs européens inscrits sur les listes communales complémentaires,
+                                 par nationalité - Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes
+                                 complémentaires, 109 632 sont des électeurs de nationalité portugaise. Nationalité Ensemble dont : inscrits pour l’élection européenne 2024 Portugaise 109 632 88 459 Italienne 52 022 39 798 Belge 49 396 42 093 Allemande 34 524 30 242 Espagnole 33 272 27 452 Néerlandaise 17 637 14 389 Roumaine 6 655 5 081 Irlandaise 4 958 4 424 Polonaise 4 759 3 862 Suédoise 2 837 2 214 Danoise 2 258 1 961 Grecque 1 822 1 536 Autrichienne 1 780 1 449 Luxembourgeoise 1 640 1 381 Bulgare 1 161 1 015 Autres nationalités de l’UE 4 423 3 771 Ensemble 328 776 269 127
+Nationalité
+Ensemble
+dont : inscrits pour l’élection européenne 2024
+Portugaise
+109 632
+88 459
+Italienne
+52 022
+39 798
+Belge
+49 396
+42 093
+Allemande
+34 524
+30 242
+Espagnole
+33 272
+27 452
+Néerlandaise
+17 637
+14 389
+Roumaine
+6 655
+5 081
+Irlandaise
+4 958
+4 424
+Polonaise
+4 759
+3 862
+Suédoise
+2 837
+2 214
+Danoise
+2 258
+1 961
+Grecque
+1 822
+1 536
+Autrichienne
+1 780
+1 449
+Luxembourgeoise
+1 640
+1 381
+Bulgare
+1 161
+1 015
+Autres nationalités de l’UE
+4 423
+3 771
+Ensemble
+328 776
+269 127
+- Lecture : Parmi les 328 776 électeurs inscrits sur au moins une des deux listes complémentaires,
+                                 109 632 sont des électeurs de nationalité portugaise.
+- Champ : France hors Nouvelle-Calédonie.
+- Source : Insee, Répertoire électoral unique, données au 8 mai 2024.
+Définitions Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes. Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats. Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales). L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+Définitions Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes. Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats. Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales). L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+
+## Définitions
+
+Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes.
+Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes.
+Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes.
+Les listes électorales communales principales sont destinées aux électeurs de nationalité française ; elles sont tenues par les
+                           communes.
+Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats.
+Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats.
+Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats.
+Les listes consulaires sont les listes électorales pour les électeurs français installés à l’étranger ;
+                           elles sont tenues par les consulats.
+Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales).
+Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales).
+Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales).
+Les listes électorales communales complémentaires sont destinées aux ressortissants d’un autre État membre de l’Union européenne. Elles
+                           sont tenues par les communes et se déclinent en deux versions : une première européenne
+                           (ouvrant le droit de voter aux élections européennes), une seconde municipale (ouvrant
+                           le droit de voter aux élections municipales).
+L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+L’ attache communale désigne le fait qu’une personne répond aux critères fixés par l’article 11 du Code
+                           électoral pour pouvoir être inscrit sur les listes électorales d’une commune. Ces
+                           critères portent notamment sur le lieu de domicile ou sur la qualité de contribuable.
+Pour en savoir plus « 49,5 millions d’électeurs inscrits pour les élections européennes de 2024 », Insee Focus n° 328, mai 2024. « Élections présidentielles et législatives de 2022 : seul un tiers des électeurs a
+                  voté à tous les tours », Insee Première n° 1928, novembre 2022. « Vingt ans de participation électorale : en 2022, les écarts selon l’âge et le diplôme
+                  continuent de se creuser », Insee Première n° 1929, novembre 2022. « 3,3 millions d’électeurs ont établi au moins une procuration pour les élections de
+                  2022 », Insee Focus n° 273, août 2022.
+Pour en savoir plus « 49,5 millions d’électeurs inscrits pour les élections européennes de 2024 », Insee Focus n° 328, mai 2024. « Élections présidentielles et législatives de 2022 : seul un tiers des électeurs a
+                  voté à tous les tours », Insee Première n° 1928, novembre 2022. « Vingt ans de participation électorale : en 2022, les écarts selon l’âge et le diplôme
+                  continuent de se creuser », Insee Première n° 1929, novembre 2022. « 3,3 millions d’électeurs ont établi au moins une procuration pour les élections de
+                  2022 », Insee Focus n° 273, août 2022.
+
+## Pour en savoir plus
+
+« 49,5 millions d’électeurs inscrits pour les élections européennes de 2024 », Insee Focus n° 328, mai 2024. « Élections présidentielles et législatives de 2022 : seul un tiers des électeurs a
+                  voté à tous les tours », Insee Première n° 1928, novembre 2022. « Vingt ans de participation électorale : en 2022, les écarts selon l’âge et le diplôme
+                  continuent de se creuser », Insee Première n° 1929, novembre 2022. « 3,3 millions d’électeurs ont établi au moins une procuration pour les élections de
+                  2022 », Insee Focus n° 273, août 2022.
+« 49,5 millions d’électeurs inscrits pour les élections européennes de 2024 », Insee Focus n° 328, mai 2024.
+« Élections présidentielles et législatives de 2022 : seul un tiers des électeurs a
+                  voté à tous les tours », Insee Première n° 1928, novembre 2022.
+« Vingt ans de participation électorale : en 2022, les écarts selon l’âge et le diplôme
+                  continuent de se creuser », Insee Première n° 1929, novembre 2022.
+« 3,3 millions d’électeurs ont établi au moins une procuration pour les élections de
+                  2022 », Insee Focus n° 273, août 2022.

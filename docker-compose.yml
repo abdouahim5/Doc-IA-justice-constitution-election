@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: docia-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: docia
+      POSTGRES_PASSWORD: docia_secret
+      POSTGRES_DB: docia_fr
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+
+volumes:
+  pgdata:

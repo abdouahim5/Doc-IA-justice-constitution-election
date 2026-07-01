@@ -1,0 +1,38 @@
+# Résumé : dictionnaire_nuances_politiques.csv
+Source : data.gouv.fr
+
+Colonnes : type_nuance, bloc, libelle_nuance, signification, commentaires
+
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+
+## Répartition par scrutin (échantillon)
+- ?: 51 lignes

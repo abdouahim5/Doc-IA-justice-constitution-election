@@ -1,0 +1,26 @@
+# Résumé : legislatives_2024_t1_par_region.csv
+Source : data.gouv.fr
+
+Colonnes : Code région, Libellé région, Inscrits, Votants, % Votants, Abstentions, % Abstentions, Exprimés, % Exprimés/inscrits, % Exprimés/votants, Blancs, % Blancs/inscrits
+
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+
+## Répartition par scrutin (échantillon)
+- ?: 18 lignes

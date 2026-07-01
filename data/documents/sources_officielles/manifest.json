@@ -1,0 +1,738 @@
+{
+  "scraped_at": "2026-07-01T10:30:37.293754+00:00",
+  "category_filter": "justice",
+  "downloaded": [
+    {
+      "source_id": "justice_fr_portail",
+      "title": "justice.fr — portail de la justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\justice_fr_portail.txt",
+      "error": null
+    },
+    {
+      "source_id": "ministere_justice",
+      "title": "Ministère de la Justice — portail",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\ministere_justice_portail.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_justice_hub",
+      "title": "Justice — thème service-public.gouv.fr",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\sp_justice_hub.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_acces_droit_justice",
+      "title": "Accès au droit et à la justice (service-public.gouv.fr)",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\justice_acces_droit_service_public.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_juridictions",
+      "title": "Juridictions en France (service-public.gouv.fr)",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\justice_juridictions_service_public.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_aide_juridictionnelle",
+      "title": "Aide juridictionnelle lors d'une procédure en France",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\aide_juridictionnelle.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_qpc",
+      "title": "Question prioritaire de constitutionnalité (QPC)",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\qpc_service_public.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_infractions_penales",
+      "title": "Infractions pénales : contravention, délit et crime",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\infractions_penales_delit_crime.txt",
+      "error": null
+    },
+    {
+      "source_id": "mj_infractions_penales",
+      "title": "Les infractions pénales — Ministère de la Justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\mj_infractions_penales.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_juridictions_penales",
+      "title": "Juridictions pénales en France",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\juridictions_penales.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_prescription_penale",
+      "title": "Justice pénale — délais de prescription",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\prescription_penale.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_porter_plainte",
+      "title": "Porter plainte pour une infraction",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\porter_plainte.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_avocat_proces_penal",
+      "title": "Avocat obligatoire dans un procès pénal",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\avocat_proces_penal.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_tribunal_correctionnel",
+      "title": "Déroulement d'une affaire devant le tribunal correctionnel",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\tribunal_correctionnel_procedure.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_amende_penale",
+      "title": "Amende prononcée par une juridiction pénale",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\amende_penale.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_peine_prison_ferme",
+      "title": "Peine de prison ferme et aménagement",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\peine_prison_ferme.txt",
+      "error": null
+    },
+    {
+      "source_id": "mj_procedure_penale",
+      "title": "Déroulement de la procédure pénale — Ministère de la Justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\mj_procedure_penale.txt",
+      "error": null
+    },
+    {
+      "source_id": "mj_justice_penale_hub",
+      "title": "Justice pénale — Ministère de la Justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\mj_justice_penale_hub.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_vol_escroquerie",
+      "title": "Vol, escroquerie et abus de confiance",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\infractions_vol_escroquerie.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_violences",
+      "title": "Violences volontaires et coups et blessures",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\infractions_violences.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_casier_judiciaire",
+      "title": "Casier judiciaire — bulletin n°1, n°2, n°3",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\casier_judiciaire.txt",
+      "error": null
+    },
+    {
+      "source_id": "sp_justice_mineurs",
+      "title": "Justice pénale des mineurs",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\justice_penale_mineurs.txt",
+      "error": null
+    },
+    {
+      "source_id": "cc_decisions_jurisprudence",
+      "title": "Conseil constitutionnel — décisions et jurisprudence",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\conseil_constitutionnel_decisions.txt",
+      "error": null
+    },
+    {
+      "source_id": "data_gouv_justice",
+      "title": "data.gouv.fr — jeux de données Justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\datagouv_ministere_justice.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_N19807",
+      "title": "Justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_N19807.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1157",
+      "title": "Infractions pénales : comment distinguer une contravention, un délit et un crime ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1157.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-penale",
+      "title": "Justice pénale",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-penale.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-penale_infractions-penales",
+      "title": "Les infractions pénales",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-penale_infractions-penales.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-penale_procedure-penale",
+      "title": "La procédure pénale",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-penale_procedure-penale.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F14128",
+      "title": "Je déménage en France",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F14128.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F17556",
+      "title": "Je recherche un emploi",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F17556.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F16225",
+      "title": "Je deviens parent",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F16225.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F16123",
+      "title": "Je veux obtenir un crédit immobilier",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F16123.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F15913",
+      "title": "J'achète un logement",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F15913.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F17904",
+      "title": "Je prépare ma retraite",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F17904.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F16507",
+      "title": "Un proche est décédé",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F16507.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F33683",
+      "title": "Qu'est-ce qu'Allô Service Public 3939 ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F33683.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F14710",
+      "title": "Casier judiciaire : bulletins n°1, n°2 et n°3",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F14710.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1523",
+      "title": "Vol, cambriolage",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1523.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1520",
+      "title": "Escroquerie",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1520.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F19448",
+      "title": "Discrimination",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F19448.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F33891",
+      "title": "Agression sexuelle commise sur une personne majeure",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F33891.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F35148",
+      "title": "Atteintes involontaires à une personne : homicide ou blessures non intentionnels",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F35148.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1526",
+      "title": "Viol commis sur une personne majeure",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1526.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F35705",
+      "title": "Peine de prison ferme",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F35705.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1407",
+      "title": "Travail d'intérêt général (TIG)",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1407.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1406",
+      "title": "Qu’est-ce qu’une peine complémentaire ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1406.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F18509",
+      "title": "Amende forfaitaire en cas de contravention au code de la route",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F18509.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F2189",
+      "title": "Juridictions pénales",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F2189.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1457",
+      "title": "Déroulement de la procédure devant le tribunal de police",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1457.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1485",
+      "title": "Déroulement d'une affaire devant le tribunal correctionnel",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1485.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1487",
+      "title": "Procès devant la cour d'assises ou la cour criminelle",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1487.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F31982",
+      "title": "Justice pénale : quels sont les délais de prescription ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F31982.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F20789",
+      "title": "Que peut faire la victime d'une infraction pénale ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F20789.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_fondements-principes",
+      "title": "Fondements et principes",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_fondements-principes.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_lorganisation-cours-tribunaux",
+      "title": "L'organisation des cours et tribunaux",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_lorganisation-cours-tribunaux.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-civile",
+      "title": "Justice civile",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-civile.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-administrative",
+      "title": "La justice administrative",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-administrative.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-mineurs",
+      "title": "Justice des mineurs",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-mineurs.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_prise-charge-personnes-condamnees-ou-prevenues",
+      "title": "Prise en charge des personnes condamnées ou prévenues",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_prise-charge-personnes-condamnees-ou-prevenues.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-europeenne-internationale",
+      "title": "Justice européenne et internationale",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-europeenne-internationale.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_acteurs-justice",
+      "title": "Acteurs de la justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_acteurs-justice.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_histoire-patrimoine",
+      "title": "Histoire et patrimoine",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_histoire-patrimoine.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_lorganisation-cours-tribunaux_lordre-judiciaire_juridictions-penales",
+      "title": "Les juridictions pénales",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_lorganisation-cours-tribunaux_lordre-judiciaire_juridictions-penales.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_justice-penale_peines",
+      "title": "Les peines",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_justice-penale_peines.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_cours-tribunaux_lordre-judiciaire_juridictions-penales",
+      "title": "Les juridictions pénales",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_cours-tribunaux_lordre-judiciaire_juridictions-penales.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_fondements-principes_grands-principes-justice",
+      "title": "Les grands principes de la justice",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_fondements-principes_grands-principes-justice.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_prise-charge-personnes-condamnees-ou-prevenues_suivi-milieu-ouvert",
+      "title": "Le suivi en milieu ouvert",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_prise-charge-personnes-condamnees-ou-prevenues_suivi-milieu-ouvert.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_prise-charge-personnes-condamnees-ou-prevenues_prise-charge-detention",
+      "title": "La prise en charge en détention",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_prise-charge-personnes-condamnees-ou-prevenues_prise-charge-detention.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_cours-tribunaux_lordre-judiciaire_cour-dappel",
+      "title": "La cour d'appel",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_cours-tribunaux_lordre-judiciaire_cour-dappel.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_justice-france_cours-tribunaux_lordre-judiciaire_cour-cassation",
+      "title": "La Cour de cassation",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_justice-france_cours-tribunaux_lordre-judiciaire_cour-cassation.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F37904",
+      "title": "Je vis à l'étranger",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F37904.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F34635",
+      "title": "Je pars de chez mes parents",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F34635.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1168",
+      "title": "Préavis et formalités du congé donné par le locataire (bail d’habitation)",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1168.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F33671",
+      "title": "État des lieux de sortie pour un bail d'habitation",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F33671.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F10696",
+      "title": "Peut-on faire payer les frais d'état des lieux au locataire ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F10696.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F31269",
+      "title": "Dépôt de garantie dans un bail d'habitation",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F31269.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F2604",
+      "title": "Vente d'un logement en copropriété",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F2604.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F19134",
+      "title": "Durée de conservation des papiers",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F19134.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1881",
+      "title": "Inscription à l'école d'un enfant après un déménagement",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1881.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F10720",
+      "title": "Un enfant qui déménage dans une nouvelle commune doit-il changer d'école ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F10720.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F20393",
+      "title": "Changement de collège ou de lycée en cours d'année",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F20393.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F34964",
+      "title": "Transports : quelles réductions pour les jeunes, étudiants et apprentis ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F34964.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F601",
+      "title": "J'ai besoin de faire garder mes enfants",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F601.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F18786",
+      "title": "Droit de visite et d'hébergement en cas de séparation des parents",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F18786.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F33997",
+      "title": "Déménagement : faire appel à un déménageur professionnel",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F33997.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1334",
+      "title": "Quelle aide apporte le Fonds de solidarité pour le logement (FSL) ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1334.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F2008",
+      "title": "Prime de déménagement",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F2008.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F78",
+      "title": "Convention collective",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F78.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F34539",
+      "title": "Un agent public a-t-il droit à un congé pour déménagement ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F34539.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F19083",
+      "title": "Assurance habitation : résiliation du contrat",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F19083.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F31300",
+      "title": "Obligation du locataire : assurance habitation couvrant les risques locatifs",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F31300.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F1350",
+      "title": "Assurance du locataire : garanties complémentaires facultatives",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F1350.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F21478",
+      "title": "Colocation et assurance habitation",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F21478.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F2591",
+      "title": "Assurance habitation : souscription du contrat",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F2591.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F2027",
+      "title": "Copropriété : quelle assurance pour les parties communes ou privatives ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F2027.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F383",
+      "title": "Impôt sur le revenu - Comment indiquer son changement d'adresse ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F383.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F22730",
+      "title": "Taxe ou redevance d'enlèvement des ordures ménagères (TEOM ou REOM)",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F22730.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F31001",
+      "title": "Qu'est-ce qu'une concession funéraire ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F31001.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F31661",
+      "title": "Détention d'une arme : faut-il signaler son changement d'adresse ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F31661.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F827",
+      "title": "Faut-il signaler un changement de situation (déménagement, séparation, chômage...) quand on perçoit des prestations fami",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F827.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F737",
+      "title": "Sécurité sociale : changement de situation personnelle",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F737.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F23671",
+      "title": "Sécurité sociale : affiliation d'un agent public auprès de l'assurance maladie",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F23671.txt",
+      "error": null
+    },
+    {
+      "source_id": "jcrawl_j_particuliers_vosdroits_F2504",
+      "title": "Comment connaître ses caisses de retraite ?",
+      "category": "justice",
+      "path": "data\\documents\\sources_officielles\\justice\\pages_crawlees\\j_particuliers_vosdroits_F2504.txt",
+      "error": null
+    }
+  ],
+  "failed": [],
+  "extra_pdfs": [],
+  "civic_crawled": 0,
+  "justice_crawled": 80
+}

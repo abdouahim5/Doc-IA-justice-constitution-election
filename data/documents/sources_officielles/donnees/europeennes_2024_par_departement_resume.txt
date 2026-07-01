@@ -1,0 +1,38 @@
+# Résumé : europeennes_2024_par_departement.csv
+Source : data.gouv.fr
+
+Colonnes : Code département, Libellé département, Inscrits, Votants, % Votants, Abstentions, % Abstentions, Exprimés, % Exprimés/inscrits, % Exprimés/votants, Blancs, % Blancs/inscrits
+
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+- ? | inscrits=? votants=? exprimés=?
+
+## Répartition par scrutin (échantillon)
+- ?: 107 lignes
