@@ -2,23 +2,89 @@
 
 > Une question sur la citoyenneté ? **DocIA** répond à partir des sources officielles — Constitution, élections, justice, test civique — avec les textes et les citations.
 
-**Branche :** `main` — environnement de staging à déployer sur Hetzner · [Détails staging](docs/STAGING.md)
+**Branche :** `main` — environnement de staging à déployer sur Hetzner
+
+<!-- STAGING:AUTO:START -->
+**Dernière mise à jour :** 2026-07-01 13:40 UTC · Branche `main` · [Détails complets](docs/STAGING.md)
 
 ## Environnement déployé
 
 | | |
 |---|---|
 | **Serveur** | Hetzner CX22 — Ubuntu 24.04 |
-| **IP** | `—` *(à compléter après déploiement)* |
-| **Stack** | Docker Compose (caddy + app + postgres pgvector) |
+| **IP** | `—` |
+| **Domaine** | `—` |
+| **Stack** | Docker Compose (caddy + app Streamlit + postgres pgvector) |
 | **Statut** | 🟡 En attente de déploiement |
 
 | Interface | URL |
 |-----------|-----|
-| **Application** | `http://IP_OU_DOMAINE` |
-| **France Civique** | `http://IP_OU_DOMAINE` → menu *France Civique* |
-| **Test civique** | `http://IP_OU_DOMAINE` → menu *Test civique* |
-| **Health** | `http://IP_OU_DOMAINE/_stcore/health` |
+| **Application** | http://IP_OU_DOMAINE |
+| **France Civique** (multi-agent) | http://IP_OU_DOMAINE → menu *France Civique* |
+| **Test civique** | http://IP_OU_DOMAINE → menu *Test civique* |
+| **Admin / diagnostic** | http://IP_OU_DOMAINE → menu *Configuration* |
+| **Health** | http://IP_OU_DOMAINE/_stcore/health |
+
+## État du déploiement
+
+| Métrique | Valeur |
+|----------|--------|
+| **Chunks indexés** | — *(lancer `pg-ingest`)* |
+| **Sources actives** | 220 fichiers *(PG après ingestion)* `████████████` 100% |
+| **Par catégorie** | constitution 9 · élections 35 · justice 146 · test civique 24 |
+| **Phase déployée** | Phase 2 — Multi-Agents (6 agents) |
+| **Modèle routing** | `Classifier hybride (mots-clés + historique + thème)` |
+| **Modèle synthesis** | `gpt-4o-mini` |
+| **Embeddings** | `text-embedding-3-small` |
+| **Vector store principal** | `PostgreSQL pgvector` |
+| **Vector store secours** | `ChromaDB (./data/vectorstore)` |
+| **Réponses en cache** | — |
+
+## Architecture déployée
+
+```
+                         Internet
+                             │
+                             ▼
+                   Caddy :80 / :443
+                   (ou IP:8501 direct)
+                             │
+                             ▼
+                   Streamlit :8501  (docia-app)
+                   8 pages · FR/EN
+                             │
+                   MultiAgentOrchestrator
+                             │
+              ┌──────────────┴──────────────┐
+              │  Classifier + resolve_topic  │
+              │  (historique · thème actif)    │
+              └──────────────┬──────────────┘
+                             │
+         ┌───────────────────┼───────────────────┐
+         ▼                   ▼                   ▼
+  constitution          elections            justice
+  test_civique            data              general
+         │                   │                   │
+         └───────────────────┼───────────────────┘
+                             ▼
+              Retrieval hybride par agent
+              · vecteurs cosine (pgvector)
+              · ILIKE + pg_trgm
+              · patterns (articles, dates, pénal)
+              · query_cache
+                             │
+                             ▼
+              Synthesis LLM (gpt-4o-mini)
+              réponses sourcées + citations
+                             │
+              ┌──────────────┴──────────────┐
+              ▼                             ▼
+     PostgreSQL pgvector              ChromaDB local
+     (principal · réseau interne)     (secours si PG down)
+```
+
+> Mettre à jour : `py scripts/update_staging_status.py` · config VPS : `deploy/staging.env`
+<!-- STAGING:AUTO:END -->
 
 ---
 
@@ -71,7 +137,7 @@ DATABASE_URL=postgresql+psycopg://docia:docia_secret@localhost:5433/docia_fr
 
 | Document | Sujet |
 |----------|-------|
-| **[docs/STAGING.md](docs/STAGING.md)** | **Environnement staging (URLs, statut, mise à jour)** |
+| **[docs/STAGING.md](docs/STAGING.md)** | **Environnement staging (URLs, métriques, architecture)** |
 | **[docs/PROJET_COMPLET.md](docs/PROJET_COMPLET.md)** | **★ Tout le projet : architecture, flux, agents, BDD** |
 | [docs/README.md](docs/README.md) | Index documentation |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Schémas techniques |
