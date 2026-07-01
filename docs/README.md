@@ -13,8 +13,8 @@ Index de toute la documentation du projet.
 | [DEPANNAGE.md](DEPANNAGE.md) | Erreurs connues : SSL, OpenAI, ImportError, index |
 | [COMMANDES.md](COMMANDES.md) | Référence complète CLI et interface web |
 | [MULTI_AGENT.md](MULTI_AGENT.md) | Multi-agent France, PostgreSQL, cache instantané |
-| [SCRAPING.md](SCRAPING.md) | Téléchargement automatique des sources officielles |
-| [DEPLOIEMENT.md](DEPLOIEMENT.md) | Déploiement VPS Docker (production) |
+| [DEPLOIEMENT.md](DEPLOIEMENT.md) | Déploiement VPS Docker |
+| [STAGING.md](STAGING.md) | Environnement staging (URLs, statut) |
 
 ## Fichiers racine utiles
 

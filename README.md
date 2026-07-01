@@ -1,3 +1,27 @@
+# France Civique IA — Staging
+
+> Une question sur la citoyenneté ? **DocIA** répond à partir des sources officielles — Constitution, élections, justice, test civique — avec les textes et les citations.
+
+**Branche :** `main` — environnement de staging à déployer sur Hetzner · [Détails staging](docs/STAGING.md)
+
+## Environnement déployé
+
+| | |
+|---|---|
+| **Serveur** | Hetzner CX22 — Ubuntu 24.04 |
+| **IP** | `—` *(à compléter après déploiement)* |
+| **Stack** | Docker Compose (caddy + app + postgres pgvector) |
+| **Statut** | 🟡 En attente de déploiement |
+
+| Interface | URL |
+|-----------|-----|
+| **Application** | `http://IP_OU_DOMAINE` |
+| **France Civique** | `http://IP_OU_DOMAINE` → menu *France Civique* |
+| **Test civique** | `http://IP_OU_DOMAINE` → menu *Test civique* |
+| **Health** | `http://IP_OU_DOMAINE/_stcore/health` |
+
+---
+
 # France Civique IA (DocIA)
 
 Application **multi-agent** pour interroger des sources officielles françaises (Constitution, élections, justice, test civique) en langage naturel.
@@ -47,6 +71,7 @@ DATABASE_URL=postgresql+psycopg://docia:docia_secret@localhost:5433/docia_fr
 
 | Document | Sujet |
 |----------|-------|
+| **[docs/STAGING.md](docs/STAGING.md)** | **Environnement staging (URLs, statut, mise à jour)** |
 | **[docs/PROJET_COMPLET.md](docs/PROJET_COMPLET.md)** | **★ Tout le projet : architecture, flux, agents, BDD** |
 | [docs/README.md](docs/README.md) | Index documentation |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Schémas techniques |
