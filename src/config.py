@@ -10,9 +10,27 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+def apply_streamlit_secrets() -> None:
+    """Injecte st.secrets dans os.environ (Streamlit Community Cloud)."""
+    try:
+        import streamlit as st
+
+        if not hasattr(st, "secrets"):
+            return
+        for key, value in st.secrets.items():
+            if isinstance(value, str):
+                os.environ[key] = value
+            elif hasattr(value, "items"):
+                for sub_key, sub_val in value.items():
+                    os.environ[str(sub_key)] = str(sub_val)
+    except Exception:
+        pass
+
+
 def reload_env() -> None:
     """Recharge .env (necessaire car Streamlit met en cache les modules)."""
     load_dotenv(BASE_DIR / ".env", override=True)
+    apply_streamlit_secrets()
 
 
 reload_env()
@@ -115,7 +133,7 @@ def get_llm_status() -> dict:
             "provider": "openai",
             "model": openai_model,
             "ready": False,
-            "message": "Cle OpenAI manquante ou invalide dans .env",
+            "message": "Cle OpenAI manquante (.env ou Secrets Streamlit)",
         }
     return {
         "provider": "openai",

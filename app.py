@@ -12,10 +12,24 @@ import src.startup  # noqa: F401
 for _mod in [k for k in list(sys.modules) if k.startswith("src.") and k != "src.startup"]:
     del sys.modules[_mod]
 
+from typing import TYPE_CHECKING
+
 import streamlit as st
 
-from src.agent import RAGAgent
-from src.config import DOCUMENTS_DIR, get_embedding_provider, get_llm_status, reload_env
+if TYPE_CHECKING:
+    from src.agent.rag_agent import RAGAgent
+
+from src.config import (
+    DOCUMENTS_DIR,
+    apply_streamlit_secrets,
+    get_embedding_provider,
+    get_llm_status,
+    reload_env,
+)
+
+reload_env()
+apply_streamlit_secrets()
+
 from src.diagnostics import full_diagnostic, test_openai_connection
 from src.errors import describe_error
 from src.retrieval.vector_store import is_index_healthy
@@ -91,7 +105,9 @@ def _active_provider() -> str:
     return os.getenv("LLM_PROVIDER", "openai")
 
 
-def _get_agent() -> RAGAgent:
+def _get_agent() -> "RAGAgent":
+    from src.agent import RAGAgent
+
     key = _agent_cache_key()
     if st.session_state.get("agent_cache_key") != key or "agent" not in st.session_state:
         st.session_state.agent = RAGAgent()
@@ -142,7 +158,7 @@ def _init_session():
         st.session_state.pop(stale, None)
 
 
-def _new_conversation(agent: RAGAgent):
+def _new_conversation(agent: "RAGAgent"):
     agent.clear_memory()
     st.session_state.messages = []
     st.session_state.france_messages = []
@@ -154,7 +170,7 @@ def _new_conversation(agent: RAGAgent):
         st.session_state.page = "chat"
 
 
-def _sync_agent_memory(agent: RAGAgent):
+def _sync_agent_memory(agent: "RAGAgent"):
     """Aligne la mémoire RAG sur les messages affichés dans le chat."""
     msgs = [
         m for m in st.session_state.get("messages", [])
@@ -174,7 +190,7 @@ def _chat_history_for_agent() -> list[dict]:
     ]
 
 
-def _render_nav(agent: RAGAgent, stats: dict, llm_status: dict):
+def _render_nav(agent: "RAGAgent | None", stats: dict, llm_status: dict):
     nav_page = st.session_state.page
     if nav_page == "theme_explore":
         nav_page = "themes"
@@ -184,7 +200,8 @@ def _render_nav(agent: RAGAgent, stats: dict, llm_status: dict):
         st.rerun()
 
     def on_new_chat():
-        _new_conversation(agent)
+        active_agent = agent if agent is not None else _get_agent()
+        _new_conversation(active_agent)
         st.rerun()
 
     render_nav_panel(
@@ -201,13 +218,11 @@ def _home_stat_items(agent_stats: dict) -> list[tuple[str, str]]:
     lang = st.session_state.get("lang", "fr")
     elections_label = "ÉLECTIONS" if lang == "fr" else "ELECTIONS"
     try:
-        from src.db import check_connection, get_session
+        from src.db import get_session
         from src.db.repository import CorpusRepository
 
-        ok, _ = check_connection()
-        if ok:
-            with get_session() as session:
-                pg = CorpusRepository(session).get_stats()
+        pg = _pg_stats()
+        if pg:
             return [
                 ("SOURCES", str(pg.get("total_sources", 0))),
                 ("CHUNKS", str(pg.get("total_chunks", 0))),
@@ -764,25 +779,31 @@ def main():
     _init_session()
     inject_styles()
 
-    agent = _get_agent()
-    stats = agent.get_stats()
     llm_status = get_llm_status()
-    index_ok = is_index_healthy()
+    current = st.session_state.get("page", "accueil")
+    rag_pages = frozenset({"chat", "theme_explore", "admin"})
+
+    agent = None
+    stats = {"chunks_indexed": 0, "documents_dir": str(DOCUMENTS_DIR)}
+    index_ok = False
+    if current in rag_pages:
+        agent = _get_agent()
+        stats = agent.get_stats()
+        index_ok = is_index_healthy()
 
     with st.sidebar:
         _render_nav(agent, stats, llm_status)
 
     pages = {
         "accueil": lambda: _page_accueil(stats, llm_status),
-        "chat": lambda: _page_chat(agent, llm_status),
+        "chat": lambda: _page_chat(_get_agent(), llm_status),
         "france": lambda: _page_france(llm_status),
         "themes": _page_themes,
-        "theme_explore": lambda: _page_theme_explore(agent, llm_status),
+        "theme_explore": lambda: _page_theme_explore(_get_agent(), llm_status),
         "test_civique": render_civic_test_page,
         "faq": _page_faq,
-        "admin": lambda: _page_admin(agent, stats, index_ok),
+        "admin": lambda: _page_admin(_get_agent(), _get_agent().get_stats(), is_index_healthy()),
     }
-    current = st.session_state.get("page", "accueil")
     if current not in pages:
         current = "accueil"
         st.session_state.page = "accueil"

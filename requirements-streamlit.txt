@@ -1,0 +1,5 @@
+# DocIA — dépendances Streamlit Community Cloud
+# Remplacer le contenu de requirements.txt par ce fichier avant déploiement cloud
+# (ou utiliser la branche deploy/streamlit décrite dans docs/DEPLOIEMENT_STREAMLIT_CLOUD.md)
+
+-r requirements.docker.txt
