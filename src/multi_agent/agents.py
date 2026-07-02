@@ -1,6 +1,5 @@
 """Agents spécialisés — Constitution, Élections, Données chiffrées."""
 
-from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from functools import lru_cache
 
@@ -256,14 +255,10 @@ def _text_only_retrieve(
             patterns.append(f"%{w}%")
     patterns = list(dict.fromkeys(patterns))[:6]
 
-    with ThreadPoolExecutor(max_workers=2) as pool:
-        f_txt = pool.submit(repo.search_text, question, category, cfg["text_limit"])
-        f_pat = (
-            pool.submit(repo.search_chunks_patterns, patterns, category, 3)
-            if patterns else None
-        )
-        text_hits = f_txt.result()
-        pattern_hits = f_pat.result() if f_pat else []
+    text_hits = repo.search_text(question, category, cfg["text_limit"])
+    pattern_hits = (
+        repo.search_chunks_patterns(patterns, category, 3) if patterns else []
+    )
 
     chunks = _merge_text_hits(text_hits, pattern_hits, max_chunks=cfg["max_chunks"])
     return chunks, [], []
@@ -298,18 +293,12 @@ class BaseSpecialistAgent:
             return _text_only_retrieve(self.repo, question, self.category, cfg)
 
         emb = self._embed(question)
-
-        def _vec():
-            return self.repo.search_vector(emb, category=self.category, limit=cfg["vector_limit"])
-
-        def _txt():
-            return self.repo.search_text(question, category=self.category, limit=cfg["text_limit"])
-
-        with ThreadPoolExecutor(max_workers=2) as pool:
-            f_vec = pool.submit(_vec)
-            f_txt = pool.submit(_txt)
-            vector_hits = f_vec.result()
-            text_hits = f_txt.result()
+        vector_hits = self.repo.search_vector(
+            emb, category=self.category, limit=cfg["vector_limit"]
+        )
+        text_hits = self.repo.search_text(
+            question, category=self.category, limit=cfg["text_limit"]
+        )
 
         chunks = _merge_text_hits(text_hits, [], vector_hits, cfg["max_chunks"])
         return chunks, [], []
@@ -515,17 +504,12 @@ class ElectionsAgent(BaseSpecialistAgent):
 
         emb = self._embed(search_q)
         lim_v, lim_t = cfg["vector_limit"], cfg["text_limit"]
-
-        with ThreadPoolExecutor(max_workers=3) as pool:
-            f_vec = pool.submit(self.repo.search_vector, emb, self.category, lim_v)
-            f_txt = pool.submit(self.repo.search_text, search_q, self.category, lim_t)
-            f_pat = (
-                pool.submit(self.repo.search_chunks_patterns, date_patterns, self.category, 3)
-                if date_patterns else None
-            )
-            vector_hits = f_vec.result()
-            text_hits = f_txt.result()
-            pattern_hits = f_pat.result() if f_pat else []
+        vector_hits = self.repo.search_vector(emb, self.category, lim_v)
+        text_hits = self.repo.search_text(search_q, self.category, lim_t)
+        pattern_hits = (
+            self.repo.search_chunks_patterns(date_patterns, self.category, 3)
+            if date_patterns else []
+        )
 
         chunks = _merge_text_hits(text_hits, pattern_hits, vector_hits, cfg["max_chunks"])
         return chunks, [], []
@@ -564,17 +548,12 @@ class JusticeAgent(BaseSpecialistAgent):
         emb = self._embed(search_q)
         use_patterns = any(k in q_lower for k in self._PENAL_KW)
         lim = cfg["vector_limit"]
-
-        with ThreadPoolExecutor(max_workers=3) as pool:
-            f_vec = pool.submit(self.repo.search_vector, emb, self.category, lim)
-            f_txt = pool.submit(self.repo.search_text, search_q, self.category, lim)
-            f_pat = (
-                pool.submit(self.repo.search_chunks_patterns, penal_patterns, self.category, 3)
-                if use_patterns else None
-            )
-            vector_hits = f_vec.result()
-            text_hits = f_txt.result()
-            pattern_hits = f_pat.result() if f_pat else []
+        vector_hits = self.repo.search_vector(emb, self.category, lim)
+        text_hits = self.repo.search_text(search_q, self.category, lim)
+        pattern_hits = (
+            self.repo.search_chunks_patterns(penal_patterns, self.category, 3)
+            if use_patterns else []
+        )
 
         chunks = _merge_text_hits(text_hits, pattern_hits, vector_hits, cfg["max_chunks"])
         return chunks, [], []
@@ -594,11 +573,10 @@ class DataAgent(BaseSpecialistAgent):
     def retrieve(self, question: str, display_question: str | None = None):
         cfg = get_multi_agent_settings()
         emb = self._embed(question)
-        with ThreadPoolExecutor(max_workers=3) as pool:
-            f_facts = pool.submit(self.repo.search_facts, question, limit=10)
-            f_tables = pool.submit(self.repo.search_tables, question, limit=3)
-            f_vec = pool.submit(self.repo.search_vector, emb, limit=3)
-            return f_vec.result(), f_facts.result(), f_tables.result()
+        facts = self.repo.search_facts(question, limit=10)
+        tables = self.repo.search_tables(question, limit=3)
+        vector_hits = self.repo.search_vector(emb, limit=3)
+        return vector_hits, facts, tables
 
 
 class GeneralAgent(BaseSpecialistAgent):
