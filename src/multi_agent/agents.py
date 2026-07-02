@@ -84,14 +84,24 @@ Si l'information manque : "Non trouvé dans les sources indexées."
 Réponds en français."""
 
 
+def _score_float(val) -> float:
+    try:
+        return float(val)
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def _unpack_hit(item) -> tuple[str, float, str]:
-    """Retourne (contenu, score, fichier) quel que soit le format du tuple."""
-    if isinstance(item, tuple) and len(item) == 3 and isinstance(item[0], str):
-        return item[0], float(item[1]), str(item[2])
-    first = item[0]
-    if hasattr(first, "content"):
-        return first.content, float(item[1]), str(item[2])
-    return str(item[0]), float(item[1]), str(item[2])
+    """Retourne (contenu, score, fichier) — formats repo ou déjà normalisés."""
+    if isinstance(item, tuple) and len(item) == 3:
+        first, second, third = item[0], item[1], item[2]
+        if hasattr(first, "content"):
+            return first.content, _score_float(second), str(third)
+        if isinstance(first, str):
+            if isinstance(second, (int, float)):
+                return first, float(second), str(third)
+            return first, _score_float(third), str(second)
+    return str(item[0]), _score_float(item[1]), str(item[2])
 
 
 def _format_chunks(hits: list, max_chars: int = 800) -> str:
@@ -183,14 +193,7 @@ def _article_patterns(nums: list[int]) -> list[str]:
 
 
 def _normalize_hits(hits: list) -> list[tuple[str, float, str]]:
-    out: list[tuple[str, float, str]] = []
-    for item in hits:
-        if hasattr(item[0], "content"):
-            out.append((item[0].content, float(item[1]), str(item[2])))
-        else:
-            content, fname, score = item[0], item[1], item[2]
-            out.append((content, float(score), str(fname)))
-    return out
+    return [_unpack_hit(item) for item in hits]
 
 
 def _filter_article_chunks(
@@ -228,8 +231,7 @@ def _merge_text_hits(
             if hasattr(item[0], "content"):
                 combined.append(item)
             else:
-                content, fname, score = item[0], item[1], item[2]
-                combined.append((content, score, fname))
+                combined.append(_unpack_hit(item))
     out: list = []
     seen_files: set[str] = set()
     for item in combined:
@@ -320,7 +322,7 @@ class BaseSpecialistAgent:
         vector_hits = self.repo.search_vector(emb, self.category, cfg["vector_limit"] + 2)
         text_hits = self.repo.search_text(search_q, self.category, cfg["text_limit"])
         fallback = _filter_article_chunks(
-            list(_normalize_hits(vector_hits)) + list(_normalize_hits(text_hits)),
+            list(vector_hits) + list(text_hits),
             article_nums,
         )
         if fallback:

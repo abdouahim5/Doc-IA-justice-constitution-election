@@ -95,8 +95,8 @@ class CorpusRepository:
 
   def search_text(
       self, query: str, category: str | None = None, limit: int = 8
-  ) -> list[tuple[str, str, float]]:
-      """Recherche full-text trigram."""
+  ) -> list[tuple[str, float, str]]:
+      """Recherche full-text trigram — retourne (contenu, score, fichier)."""
       cat_filter = "AND s.category = :cat" if category else ""
       words = " ".join(w for w in query.split() if len(w) >= 2)[:80]
       short = query.strip()[:40]
@@ -121,7 +121,7 @@ class CorpusRepository:
       if category:
           params["cat"] = category
       try:
-          return [(r[0], r[1], float(r[2])) for r in self.session.execute(sql, params).fetchall()]
+          return [(r[0], float(r[2]), r[1]) for r in self.session.execute(sql, params).fetchall()]
       except Exception:
           return []
 
@@ -130,7 +130,7 @@ class CorpusRepository:
       patterns: list[str],
       category: str | None = None,
       limit: int = 8,
-  ) -> list[tuple[str, str, float]]:
+  ) -> list[tuple[str, float, str]]:
       """Recherche ILIKE sur plusieurs motifs (ex. dates d'élections)."""
       if not patterns:
           return []
@@ -148,7 +148,7 @@ class CorpusRepository:
       params["lim"] = limit
       if category:
           params["cat"] = category
-      return [(r[0], r[1], float(r[2])) for r in self.session.execute(sql, params).fetchall()]
+      return [(r[0], float(r[2]), r[1]) for r in self.session.execute(sql, params).fetchall()]
 
   def search_facts(
       self, query: str, category: str | None = None, limit: int = 10
