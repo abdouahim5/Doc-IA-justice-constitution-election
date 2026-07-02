@@ -16,11 +16,19 @@ from typing import TYPE_CHECKING
 
 import streamlit as st
 
+st.set_page_config(
+    page_title="France Civique IA",
+    page_icon="🇫🇷",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 if TYPE_CHECKING:
     from src.agent.rag_agent import RAGAgent
 
 from src.config import (
     DOCUMENTS_DIR,
+    VECTOR_STORE_DIR,
     apply_streamlit_secrets,
     get_embedding_provider,
     get_llm_status,
@@ -30,9 +38,7 @@ from src.config import (
 reload_env()
 apply_streamlit_secrets()
 
-from src.diagnostics import full_diagnostic, test_openai_connection
 from src.errors import describe_error
-from src.retrieval.vector_store import is_index_healthy
 from src.ui.i18n import (
     get_france_suggestions,
     get_theme_cards,
@@ -54,14 +60,15 @@ from src.ui.theme import (
 
 _ENV_FILE = ROOT / ".env"
 
-st.set_page_config(
-    page_title="France Civique IA",
-    page_icon="🇫🇷",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
 _VALID_PAGES = frozenset({"accueil", "chat", "france", "themes", "theme_explore", "test_civique", "faq", "admin"})
+
+
+def _is_index_healthy() -> bool:
+    """Vérifie ChromaDB sans importer langchain-chroma (démarrage cloud plus rapide)."""
+    directory = VECTOR_STORE_DIR
+    if not directory.exists():
+        return False
+    return (directory / "chroma.sqlite3").exists()
 
 
 def _env_mtime() -> float:
@@ -218,9 +225,6 @@ def _home_stat_items(agent_stats: dict) -> list[tuple[str, str]]:
     lang = st.session_state.get("lang", "fr")
     elections_label = "ÉLECTIONS" if lang == "fr" else "ELECTIONS"
     try:
-        from src.db import get_session
-        from src.db.repository import CorpusRepository
-
         pg = _pg_stats()
         if pg:
             return [
@@ -432,6 +436,10 @@ def _run_query(agent: RAGAgent, prompt: str):
 
 
 def _pg_stats() -> dict:
+    reload_env()
+    if not os.getenv("DATABASE_URL", "").strip():
+        return {}
+
     from src.db.engine import get_session
     from src.db.repository import CorpusRepository
 
@@ -657,6 +665,8 @@ def _page_faq():
 
 
 def _page_admin(agent: RAGAgent, stats: dict, index_ok: bool):
+    from src.diagnostics import full_diagnostic, test_openai_connection
+
     hero_section(
         "⚙️ CONFIGURATION",
         "Gérer l'agent et les documents",
@@ -789,7 +799,7 @@ def main():
     if current in rag_pages:
         agent = _get_agent()
         stats = agent.get_stats()
-        index_ok = is_index_healthy()
+        index_ok = _is_index_healthy()
 
     with st.sidebar:
         _render_nav(agent, stats, llm_status)
@@ -802,7 +812,7 @@ def main():
         "theme_explore": lambda: _page_theme_explore(_get_agent(), llm_status),
         "test_civique": render_civic_test_page,
         "faq": _page_faq,
-        "admin": lambda: _page_admin(_get_agent(), _get_agent().get_stats(), is_index_healthy()),
+        "admin": lambda: _page_admin(_get_agent(), _get_agent().get_stats(), _is_index_healthy()),
     }
     if current not in pages:
         current = "accueil"

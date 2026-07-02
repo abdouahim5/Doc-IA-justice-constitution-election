@@ -6,16 +6,21 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session, sessionmaker
 
 import src.startup  # noqa: F401
-from src.config import reload_env
+from src.config import BASE_DIR, reload_env
 from src.db.models import Base
+
+_LOCAL_DEFAULT = "postgresql+psycopg://docia:docia_secret@localhost:5433/docia_fr"
 
 
 def get_database_url() -> str:
     reload_env()
-    return os.getenv(
-        "DATABASE_URL",
-        "postgresql+psycopg://docia:docia_secret@localhost:5433/docia_fr",
-    )
+    url = os.getenv("DATABASE_URL", "").strip()
+    if url:
+        return url
+    # Streamlit Cloud n'a pas de .env : éviter un timeout vers localhost:5433
+    if (BASE_DIR / ".env").is_file():
+        return _LOCAL_DEFAULT
+    return ""
 
 
 _engine = None
@@ -25,8 +30,11 @@ _SessionLocal = None
 def get_engine():
     global _engine, _SessionLocal
     if _engine is None:
+        url = get_database_url()
+        if not url:
+            raise RuntimeError("DATABASE_URL non configurée")
         _engine = create_engine(
-            get_database_url(),
+            url,
             pool_pre_ping=True,
             pool_size=5,
             pool_timeout=3,
