@@ -27,7 +27,7 @@ def _shared_llm():
 
 
 _EMBED_CACHE: dict[str, list[float]] = {}
-_EMBED_CACHE_MAX = 128
+_EMBED_CACHE_MAX = 256
 
 
 def _cached_embed(text: str, embedder) -> list[float]:
@@ -69,8 +69,9 @@ Si absent : "Chiffre non trouvé dans les sources indexées."""
 
 SYSTEM_GENERAL = """Tu es un assistant documentaire sur la France (constitution, élections, justice).
 Réponds uniquement à partir des sources fournies. Cite [nom_fichier].
-Rédige une réponse en phrases complètes (4 à 8 phrases), claire et structurée.
-Ne recopie pas d'extraits bruts : synthétise en français."""
+Rédige une réponse structurée, précise et complète (6 à 10 phrases).
+Synthétise en français clair : définition, points clés, exemples si présents dans les sources.
+Ne recopie pas d'extraits bruts."""
 
 SYSTEM_JUSTICE = """Tu es un expert en droit français : lois, codes, procédure et jurisprudence.
 Réponds UNIQUEMENT à partir des extraits fournis (Légifrance, cours, service-public).
@@ -243,6 +244,49 @@ def _merge_text_hits(
     return out[:max_chunks]
 
 
+def _parallel_hybrid_search(
+    repo: CorpusRepository,
+    question: str,
+    category: str | None,
+    embedding: list[float],
+    cfg: dict,
+) -> tuple[list, list]:
+    """Recherche vecteur + texte en parallèle (sessions SQLAlchemy séparées)."""
+    if not cfg.get("parallel_search"):
+        return (
+            repo.search_vector(embedding, category=category, limit=cfg["vector_limit"]),
+            repo.search_text(question, category=category, limit=cfg["text_limit"]),
+        )
+
+    from concurrent.futures import ThreadPoolExecutor
+
+    from src.db.engine import get_session
+    from src.db.repository import CorpusRepository as Repo
+
+    def _vector() -> list:
+        session = get_session()
+        try:
+            return Repo(session).search_vector(
+                embedding, category=category, limit=cfg["vector_limit"]
+            )
+        finally:
+            session.close()
+
+    def _text() -> list:
+        session = get_session()
+        try:
+            return Repo(session).search_text(
+                question, category=category, limit=cfg["text_limit"]
+            )
+        finally:
+            session.close()
+
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        vector_future = pool.submit(_vector)
+        text_future = pool.submit(_text)
+        return vector_future.result(), text_future.result()
+
+
 def _text_only_retrieve(
     repo: CorpusRepository,
     question: str,
@@ -296,11 +340,8 @@ class BaseSpecialistAgent:
             return _text_only_retrieve(self.repo, question, self.category, cfg)
 
         emb = self._embed(question)
-        vector_hits = self.repo.search_vector(
-            emb, category=self.category, limit=cfg["vector_limit"]
-        )
-        text_hits = self.repo.search_text(
-            question, category=self.category, limit=cfg["text_limit"]
+        vector_hits, text_hits = _parallel_hybrid_search(
+            self.repo, question, self.category, emb, cfg
         )
 
         chunks = _merge_text_hits(text_hits, [], vector_hits, cfg["max_chunks"])
@@ -422,18 +463,21 @@ class BaseSpecialistAgent:
         system = SYSTEM_CONSTITUTION_ARTICLE if article_nums else self.system_prompt
 
         if article_nums:
-            suffix = "\nRecopie le texte exact de l'article demandé."
+            suffix = "\nRecopie le texte exact de l'article demandé, puis explique-le clairement."
         elif _needs_synthesis(user_q):
             suffix = (
-                "\nRédige une réponse en phrases complètes (4 à 8 phrases). "
-                "Ne recopie pas d'extraits bruts."
+                "\nRédige une réponse structurée (6 à 10 phrases), précise, sourcée "
+                "et facile à comprendre."
             )
-        elif cfg["fast"]:
+        elif cfg.get("answer_style") == "short":
             suffix = "\nRéponds en 3-6 phrases maximum."
         else:
-            suffix = ""
+            suffix = (
+                "\nRédige une réponse complète et structurée (puces si utile), "
+                "avec citations [fichier]."
+            )
 
-        use_facts = not cfg["fast"] and bool(facts or tables)
+        use_facts = cfg.get("facts_limit", 0) > 0 and bool(facts or tables)
         if use_facts:
             system_full = system
             answer = invoke_qa_chain(
@@ -505,8 +549,9 @@ class ElectionsAgent(BaseSpecialistAgent):
 
         emb = self._embed(search_q)
         lim_v, lim_t = cfg["vector_limit"], cfg["text_limit"]
-        vector_hits = self.repo.search_vector(emb, self.category, lim_v)
-        text_hits = self.repo.search_text(search_q, self.category, lim_t)
+        vector_hits, text_hits = _parallel_hybrid_search(
+            self.repo, search_q, self.category, emb, cfg
+        )
         pattern_hits = (
             self.repo.search_chunks_patterns(date_patterns, self.category, 3)
             if date_patterns else []
@@ -547,10 +592,10 @@ class JusticeAgent(BaseSpecialistAgent):
             )
 
         emb = self._embed(search_q)
+        vector_hits, text_hits = _parallel_hybrid_search(
+            self.repo, search_q, self.category, emb, cfg
+        )
         use_patterns = any(k in q_lower for k in self._PENAL_KW)
-        lim = cfg["vector_limit"]
-        vector_hits = self.repo.search_vector(emb, self.category, lim)
-        text_hits = self.repo.search_text(search_q, self.category, lim)
         pattern_hits = (
             self.repo.search_chunks_patterns(penal_patterns, self.category, 3)
             if use_patterns else []
@@ -574,9 +619,16 @@ class DataAgent(BaseSpecialistAgent):
     def retrieve(self, question: str, display_question: str | None = None):
         cfg = get_multi_agent_settings()
         emb = self._embed(question)
-        facts = self.repo.search_facts(question, limit=10)
-        tables = self.repo.search_tables(question, limit=3)
-        vector_hits = self.repo.search_vector(emb, limit=3)
+        facts_lim = cfg.get("facts_limit") or 10
+        tables_lim = cfg.get("tables_limit") or 3
+        facts = self.repo.search_facts(question, limit=facts_lim)
+        tables = self.repo.search_tables(question, limit=tables_lim)
+        if cfg.get("parallel_search"):
+            vector_hits, _text_hits = _parallel_hybrid_search(
+                self.repo, question, None, emb, cfg
+            )
+        else:
+            vector_hits = self.repo.search_vector(emb, limit=cfg["vector_limit"])
         return vector_hits, facts, tables
 
 

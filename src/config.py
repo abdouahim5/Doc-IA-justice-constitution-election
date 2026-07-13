@@ -76,6 +76,59 @@ SUPPORTED_EXTENSIONS = {".pdf", ".txt", ".md", ".docx"}
 
 _PLACEHOLDER_KEYS = {"", "sk-votre-cle-api", "your-api-key-here", "changeme"}
 
+_PERFORMANCE_PROFILES: dict[str, dict] = {
+    "fast": {
+        "text_only": True,
+        "extractive": False,
+        "vector_limit": 3,
+        "text_limit": 5,
+        "max_chunks": 3,
+        "chunk_chars": 450,
+        "facts_limit": 0,
+        "tables_limit": 0,
+        "max_tokens": 320,
+        "parallel_search": False,
+        "answer_style": "short",
+    },
+    "balanced": {
+        "text_only": False,
+        "extractive": True,
+        "vector_limit": 4,
+        "text_limit": 6,
+        "max_chunks": 5,
+        "chunk_chars": 750,
+        "facts_limit": 6,
+        "tables_limit": 2,
+        "max_tokens": 600,
+        "parallel_search": True,
+        "answer_style": "rich",
+    },
+    "quality": {
+        "text_only": False,
+        "extractive": False,
+        "vector_limit": 6,
+        "text_limit": 8,
+        "max_chunks": 6,
+        "chunk_chars": 950,
+        "facts_limit": 10,
+        "tables_limit": 3,
+        "max_tokens": 900,
+        "parallel_search": True,
+        "answer_style": "rich",
+    },
+}
+
+
+def get_performance_mode() -> str:
+    """Profil perf : fast | balanced | quality (défaut : balanced)."""
+    reload_env()
+    mode = os.getenv("PERFORMANCE_MODE", "").strip().lower()
+    if mode in _PERFORMANCE_PROFILES:
+        return mode
+    if os.getenv("FAST_MODE", "true").lower() in ("0", "false", "no"):
+        return "quality"
+    return "balanced"
+
 
 def is_openai_configured() -> bool:
     """True si une vraie cle OpenAI est configuree."""
@@ -91,32 +144,33 @@ def get_embedding_provider() -> str:
 
 
 def get_multi_agent_settings() -> dict:
-    """Paramètres multi-agent (mode rapide = moins de chunks, recherches parallèles)."""
+    """Paramètres multi-agent selon PERFORMANCE_MODE (balanced = rapide + qualité)."""
     reload_env()
-    fast = os.getenv("FAST_MODE", "true").lower() in ("1", "true", "yes")
-    return {
-        "fast": fast,
-        "text_only": fast or os.getenv("TEXT_ONLY_SEARCH", "").lower() in ("1", "true", "yes"),
-        "extractive": False,
-        "vector_limit": 3 if fast else 5,
-        "text_limit": 5 if fast else 6,
-        "max_chunks": 3 if fast else 5,
-        "chunk_chars": 450 if fast else 700,
-        "facts_limit": 0 if fast else 6,
-        "tables_limit": 0 if fast else 2,
-        "max_tokens": int(os.getenv("OPENAI_MAX_TOKENS", "250" if fast else "400")),
-    }
+    mode = get_performance_mode()
+    profile = dict(_PERFORMANCE_PROFILES[mode])
+    profile["mode"] = mode
+    profile["fast"] = mode == "fast"
+    if os.getenv("TEXT_ONLY_SEARCH", "").lower() in ("1", "true", "yes"):
+        profile["text_only"] = True
+    override_tokens = os.getenv("OPENAI_MAX_TOKENS", "").strip()
+    if override_tokens.isdigit():
+        profile["max_tokens"] = int(override_tokens)
+    return profile
 
 
 def get_rag_settings() -> dict:
     """Parametres RAG lus a chaque appel (compatible cache Streamlit)."""
     reload_env()
-    fast = os.getenv("FAST_MODE", "true").lower() in ("1", "true", "yes")
+    mode = get_performance_mode()
+    top_k_defaults = {"fast": 4, "balanced": 6, "quality": 8}
+    history_defaults = {"fast": 4, "balanced": 5, "quality": 6}
     return {
-        "top_k": int(os.getenv("TOP_K_RESULTS", "4" if fast else "6")),
-        "fast_mode": fast,
-        "min_relevance": float(os.getenv("MIN_RELEVANCE_SCORE", "0.18")),
-        "history_turns": int(os.getenv("CONVERSATION_HISTORY_TURNS", "4" if fast else "6")),
+        "top_k": int(os.getenv("TOP_K_RESULTS", str(top_k_defaults[mode]))),
+        "fast_mode": mode == "fast",
+        "min_relevance": float(os.getenv("MIN_RELEVANCE_SCORE", "0.16")),
+        "history_turns": int(
+            os.getenv("CONVERSATION_HISTORY_TURNS", str(history_defaults[mode]))
+        ),
     }
 
 
@@ -126,13 +180,16 @@ def get_llm_status() -> dict:
     provider = os.getenv("LLM_PROVIDER", "openai")
     openai_model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
     ollama_model = os.getenv("OLLAMA_MODEL", "llama3.2")
+    perf = get_performance_mode()
+    cfg = get_multi_agent_settings()
 
     if provider == "ollama":
         return {
             "provider": "ollama",
             "model": ollama_model,
             "ready": True,
-            "message": f"Ollama / {ollama_model}",
+            "message": f"Ollama / {ollama_model} · perf {perf}",
+            "performance_mode": perf,
         }
     if not is_openai_configured():
         return {
@@ -140,10 +197,15 @@ def get_llm_status() -> dict:
             "model": openai_model,
             "ready": False,
             "message": "Cle OpenAI manquante (.env ou Secrets Streamlit)",
+            "performance_mode": perf,
         }
     return {
         "provider": "openai",
         "model": openai_model,
         "ready": True,
-        "message": f"OpenAI / {openai_model}",
+        "message": (
+            f"OpenAI / {openai_model} · perf {perf} "
+            f"({cfg['max_chunks']} chunks, {cfg['max_tokens']} tokens)"
+        ),
+        "performance_mode": perf,
     }

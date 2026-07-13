@@ -6,7 +6,7 @@ from langchain_core.language_models import BaseChatModel
 from langchain_openai import ChatOpenAI
 
 import src.startup  # noqa: F401
-from src.config import reload_env
+from src.config import get_multi_agent_settings, reload_env
 from src.http_clients import new_http_clients
 
 
@@ -37,15 +37,14 @@ def get_llm() -> BaseChatModel:
         raise ValueError("OPENAI_API_KEY invalide (doit commencer par sk-).")
 
     http_client, http_async = new_http_clients()
+    cfg = get_multi_agent_settings()
     return ChatOpenAI(
         model=openai_model,
         temperature=float(os.getenv("TEMPERATURE", "0")),
         openai_api_key=api_key,
-        max_tokens=int(os.getenv(
-            "OPENAI_MAX_TOKENS",
-            "250" if os.getenv("FAST_MODE", "true").lower() in ("1", "true", "yes") else "400",
-        )),
+        max_tokens=cfg["max_tokens"],
         max_retries=2,
+        request_timeout=float(os.getenv("OPENAI_TIMEOUT", "50")),
         http_client=http_client,
         http_async_client=http_async,
     )
