@@ -7,6 +7,7 @@ import src.startup  # noqa: F401 - SSL en premier
 from src.config import is_openai_configured, reload_env
 from src.errors import describe_error
 from src.http_clients import test_https
+from src.langsmith_setup import get_langsmith_status
 
 
 def test_openai_connection() -> tuple[bool, str]:
@@ -53,4 +54,8 @@ def full_diagnostic() -> list[str]:
     lines.append(f"SSL: {'OK' if ssl_ok else 'ECHEC'} — {ssl_msg}")
     ok, msg = test_openai_connection()
     lines.append(f"OpenAI: {'OK' if ok else 'ECHEC'} — {msg}")
+    ls = get_langsmith_status()
+    lines.append(
+        f"LangSmith: {'ACTIF' if ls['enabled'] else 'INACTIF'} — {ls['message']}"
+    )
     return lines

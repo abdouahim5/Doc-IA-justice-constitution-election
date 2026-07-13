@@ -31,6 +31,12 @@ def reload_env() -> None:
     """Recharge .env (necessaire car Streamlit met en cache les modules)."""
     load_dotenv(BASE_DIR / ".env", override=True)
     apply_streamlit_secrets()
+    try:
+        from src.langsmith_setup import configure_langsmith
+
+        configure_langsmith()
+    except Exception:
+        pass
 
 
 reload_env()

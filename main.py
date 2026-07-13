@@ -268,7 +268,7 @@ def cmd_multi_ask(args):
     orch = MultiAgentOrchestrator()
     try:
         with console.status("[bold green]Analyse multi-agent..."):
-            response = orch.ask(args.question, use_cache=not args.no_cache)
+            response = orch.ask(args.question, use_cache=not args.no_cache, trace_source="cli")
     except Exception as e:
         console.print(f"[bold red]Erreur :[/] {e}")
         sys.exit(1)
@@ -311,7 +311,7 @@ def cmd_multi_chat(args):
             if not question or question.lower() in ("quit", "exit", "q"):
                 break
             with console.status("[bold green]Réflexion..."):
-                response = orch.ask(question)
+                response = orch.ask(question, trace_source="cli")
             tag = " [cache]" if response.from_cache else ""
             console.print(f"\n[dim][{response.agent}{tag}][/]")
             console.print(Markdown(response.answer))

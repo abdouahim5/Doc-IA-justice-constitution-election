@@ -25,6 +25,7 @@
 |--------|-------------|------|
 | **Interface** | Streamlit 1.40+ | 8 pages, chat, thèmes, test civique, admin |
 | **Orchestration** | **LangGraph** | Graphe : cache → routage → agent → sauvegarde |
+| **Observabilité** | **LangSmith** (optionnel) | Traces LangGraph / LLM, latence, coûts — voir `docs/LANGSMITH.md` |
 | **IA / RAG** | **LangChain** | Prompts LCEL, LLM, embeddings, retrieval |
 | **LLM** | OpenAI `gpt-4o-mini` (ou Ollama local) | Synthèse des réponses |
 | **Embeddings** | `text-embedding-3-small` (cloud) / TF-IDF (local rapide) | Vecteurs pgvector |

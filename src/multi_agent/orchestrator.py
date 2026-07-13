@@ -2,6 +2,7 @@
 
 from src.db.engine import get_session
 from src.db.repository import CorpusRepository
+from src.langsmith_setup import build_run_config
 from src.multi_agent.graph import build_france_graph, state_to_response
 from src.multi_agent.types import MultiAgentResponse
 
@@ -28,11 +29,22 @@ class MultiAgentOrchestrator:
         use_cache: bool = True,
         history: list[dict] | None = None,
         pinned_theme: str | None = None,
+        *,
+        trace_source: str = "streamlit",
     ) -> MultiAgentResponse:
-        final_state = self._graph.invoke({
-            "question": question,
-            "history": history or [],
-            "pinned_theme": pinned_theme,
-            "use_cache": use_cache,
-        })
+        run_config = build_run_config(
+            question,
+            pinned_theme=pinned_theme,
+            use_cache=use_cache,
+            source=trace_source,
+        )
+        final_state = self._graph.invoke(
+            {
+                "question": question,
+                "history": history or [],
+                "pinned_theme": pinned_theme,
+                "use_cache": use_cache,
+            },
+            run_config,
+        )
         return state_to_response(final_state)

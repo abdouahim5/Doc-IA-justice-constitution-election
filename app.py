@@ -710,6 +710,26 @@ def _page_admin(agent: RAGAgent, stats: dict, index_ok: bool):
             st.rerun()
 
     st.divider()
+    st.subheader("LangSmith — observabilité")
+    from src.langsmith_setup import get_langsmith_status
+
+    ls = get_langsmith_status()
+    ls_col1, ls_col2 = st.columns([2, 1])
+    with ls_col1:
+        if ls["enabled"]:
+            st.success(ls["message"])
+        elif ls["tracing_requested"]:
+            st.warning(ls["message"])
+        else:
+            st.info(ls["message"])
+        st.caption(
+            "Traces LangGraph : cache → routage → retrieval → synthèse LLM. "
+            "Voir `docs/LANGSMITH.md` pour activer."
+        )
+    with ls_col2:
+        st.link_button("Ouvrir LangSmith", ls["dashboard_url"], use_container_width=True)
+
+    st.divider()
     st.subheader("LangGraph & LangChain — France Civique")
     st.caption("Orchestration multi-agent : cache PostgreSQL → routage → agent → sauvegarde.")
     from src.multi_agent.graph import get_graph_mermaid

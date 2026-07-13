@@ -6,7 +6,8 @@
 
 📄 **[Détails du projet (PROJET_DETAILS.md)](PROJET_DETAILS.md)** — résumé à jour (stack, **staging**, commandes)  
 📚 **[Documentation complète](docs/PROJET_COMPLET.md)** — architecture détaillée  
-🚀 **[Staging](docs/STAGING.md)** — URLs, métriques, déploiement VPS / Streamlit Cloud
+🚀 **[Staging](docs/STAGING.md)** — URLs, métriques, déploiement VPS / Streamlit Cloud  
+🔍 **[LangSmith](docs/LANGSMITH.md)** — traces LangGraph / LLM (observabilité)
 
 **Branche :** `main` — staging déployé sur **Streamlit Community Cloud**
 
