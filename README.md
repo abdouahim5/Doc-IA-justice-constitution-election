@@ -2,11 +2,13 @@
 
 > Une question sur la citoyenneté ? **DocIA** répond à partir des sources officielles — Constitution, élections, justice, test civique — avec les textes et les citations.
 
+**🌐 Application en ligne :** [https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app](https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app)
+
 📄 **[Détails du projet (PROJET_DETAILS.md)](PROJET_DETAILS.md)** — résumé à jour (stack, **staging**, commandes)  
 📚 **[Documentation complète](docs/PROJET_COMPLET.md)** — architecture détaillée  
 🚀 **[Staging](docs/STAGING.md)** — URLs, métriques, déploiement VPS / Streamlit Cloud
 
-**Branche :** `main` — environnement de staging à déployer sur Hetzner
+**Branche :** `main` — staging déployé sur **Streamlit Community Cloud**
 
 <!-- STAGING:AUTO:START -->
 **Dernière mise à jour :** 2026-07-13 11:00 UTC · Branche `main` · [Détails complets](docs/STAGING.md)
