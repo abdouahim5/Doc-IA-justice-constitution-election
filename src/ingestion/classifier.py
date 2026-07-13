@@ -8,7 +8,8 @@ _CONSTITUTION_KW = {
     "assemblee", "assemblée", "parlement", "conseil constitutionnel",
     "preambule", "préambule", "institution", "loi organique", "mandat",
     "premier ministre", "bloc de constitutionnalite",
-    "president", "président", "eligibilite", "éligibilité", "eligib",
+    "president", "président", "presidence", "présidence", "presidentiel", "présidentiel",
+    "eligibilite", "éligibilité", "eligib",
 }
 
 _ELECTIONS_KW = {
@@ -180,6 +181,30 @@ def enrich_search_query(question: str, topic: str) -> str:
     return base
 
 
+def _mentions_presidency(q: str) -> bool:
+    """Détecte présidence / présidentielle (présidence ≠ président en sous-chaîne)."""
+    return any(
+        k in q
+        for k in (
+            "president", "presidentielle", "presidence", "presidentiel",
+            "president de la republique",
+        )
+    )
+
+
+def _is_presidency_eligibility_question(q: str) -> bool:
+    """Conditions pour être candidat / éligible à la présidence."""
+    if not _mentions_presidency(q):
+        return False
+    return any(
+        k in q
+        for k in (
+            "condition", "conditions", "eligib", "etre", "être",
+            "candidat", "devenir", "pour", "peut", "peut-on",
+        )
+    )
+
+
 def classify_question(question: str) -> str:
     """Route une question vers le bon agent."""
     raw = question.strip().rstrip("?.!,;:")
@@ -204,13 +229,11 @@ def classify_question(question: str) -> str:
     tc_hits = sum(1 for k in _TEST_CIVIQUE_KW if k in q)
     if tc_hits >= 2 or ("examen" in q and "civique" in q):
         return "test_civique"
+    if _is_presidency_eligibility_question(q):
+        return "constitution"
     if re.search(r"article\s*\d+", q) and not any(k in q for k in ("code", "civil", "penal", "pénal")):
         return "constitution"
-    if any(k in q for k in ("president", "presidentielle")) and any(
-        k in q for k in ("condition", "eligib", "etre", "être", "candidat", "devenir", "pour")
-    ):
-        return "constitution"
-    if any(k in q for k in ("president", "presidentielle", "pouvoir du president")):
+    if any(k in q for k in ("president", "presidentielle", "presidence", "presidentiel", "pouvoir du president")):
         return "constitution"
     if any(k in q for k in ("pourcent", "chiffre", "taux", "nombre", "combien", "statistique", "resultat")):
         if not any(k in q for k in _JUSTICE_KW):

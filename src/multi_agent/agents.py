@@ -145,9 +145,9 @@ def _fold_text(text: str) -> str:
 
 def _is_president_eligibility_question(question: str) -> bool:
     q = _fold_text(question)
-    return any(k in q for k in ("president", "presidentielle")) and any(
-        k in q for k in ("condition", "eligib", "etre", "candidat", "devenir", "pour", "peut")
-    )
+    if not any(k in q for k in ("president", "presidentielle", "presidence", "presidentiel")):
+        return False
+    return any(k in q for k in ("condition", "conditions", "eligib", "etre", "candidat", "devenir", "pour", "peut"))
 
 
 def _needs_synthesis(question: str) -> bool:
@@ -375,22 +375,24 @@ class BaseSpecialistAgent:
     def _retrieve_president_eligibility(
         self, question: str, cfg: dict
     ) -> tuple[list, list, list]:
-        """Recherche ciblée sur l'éligibilité à la présidence."""
+        """Recherche ciblée sur l'éligibilité à la présidence (sources constitution)."""
+        cat = "constitution"
         lim = max(cfg["max_chunks"], 6)
         eligibility_hits = self.repo.search_chunks_patterns(
             [
                 "%eligibilite_president%",
+                "%eligibilite_president_france%",
                 "%35 ans%",
                 "%parrainage%",
                 "%nationalité française%",
                 "%Conditions pour être candidat%",
             ],
-            self.category,
+            cat,
             4,
         )
         article_hits = self.repo.search_chunks_patterns(
             ["%ARTICLE 6.%", "%ARTICLE 7.%", "%ARTICLE 3.%", "%suffrage universel%"],
-            self.category,
+            cat,
             6,
         )
         seen: set[str] = set()
@@ -412,10 +414,10 @@ class BaseSpecialistAgent:
         emb = self._embed(
             f"{question} Président République élection éligibilité suffrage article 6 7"
         )
-        vector_hits = self.repo.search_vector(emb, self.category, cfg["vector_limit"] + 2)
+        vector_hits = self.repo.search_vector(emb, cat, cfg["vector_limit"] + 2)
         text_hits = self.repo.search_text(
             "président élection éligibilité suffrage universel 35 ans parrainages",
-            self.category,
+            cat,
             cfg["text_limit"],
         )
         return _merge_text_hits(text_hits, eligibility_hits, vector_hits, lim), [], []
@@ -529,6 +531,10 @@ class ElectionsAgent(BaseSpecialistAgent):
         self, question: str, display_question: str | None = None,
     ) -> tuple[list, list, list]:
         cfg = get_multi_agent_settings()
+        intent_q = display_question or question
+        if _is_president_eligibility_question(intent_q):
+            return self._retrieve_president_eligibility(question, cfg)
+
         q_lower = question.lower()
         search_q = question
         date_patterns: list[str] = []
