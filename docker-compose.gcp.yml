@@ -1,0 +1,93 @@
+# DocIA — déploiement Google Cloud Platform (GCP)
+# VM Compute Engine + Docker Compose
+# Usage sur la VM : docker compose -f docker-compose.gcp.yml up -d
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: docia-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-docia}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Définissez POSTGRES_PASSWORD dans .env}
+      POSTGRES_DB: ${POSTGRES_DB:-docia_fr}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-docia} -d ${POSTGRES_DB:-docia_fr}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - docia-internal
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docia-app:latest
+    container_name: docia-app
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-docia}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-docia_fr}
+      DOCUMENTS_DIR: /app/data/documents
+      VECTOR_STORE_DIR: /app/data/vectorstore
+      EMBEDDING_PROVIDER: openai
+      LLM_PROVIDER: openai
+      RUN_PG_INIT: ${RUN_PG_INIT:-true}
+      AUTO_PG_INGEST: ${AUTO_PG_INGEST:-false}
+      DB_WAIT_SECONDS: ${DB_WAIT_SECONDS:-120}
+    volumes:
+      - docia_documents:/app/data/documents
+      - docia_vectorstore:/app/data/vectorstore
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "${APP_PORT:-8501}:8501"
+    networks:
+      - docia-internal
+      - docia-public
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: docia-caddy
+    restart: unless-stopped
+    profiles:
+      - https
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+      ACME_EMAIL: ${ACME_EMAIL:-admin@example.com}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - docia-public
+
+volumes:
+  pgdata:
+  docia_documents:
+  docia_vectorstore:
+  caddy_data:
+  caddy_config:
+
+networks:
+  docia-internal:
+    internal: true
+  docia-public:

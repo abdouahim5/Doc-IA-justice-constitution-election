@@ -1,5 +1,7 @@
 """Interface web Streamlit pour l'agent RAG — design moderne."""
 
+from __future__ import annotations
+
 import os
 import sys
 from pathlib import Path
@@ -69,6 +71,25 @@ def _is_index_healthy() -> bool:
     if not directory.exists():
         return False
     return (directory / "chroma.sqlite3").exists()
+
+
+def _render_mermaid(diagram: str, height: int = 340) -> None:
+    """Affiche un diagramme Mermaid dans Streamlit."""
+    import streamlit.components.v1 as components
+
+    safe = diagram.replace("`", "'")
+    components.html(
+        f"""<!DOCTYPE html>
+<html><body style="margin:0;background:#f8fafc;">
+<pre class="mermaid">{safe}</pre>
+<script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+mermaid.initialize({{ startOnLoad: true, theme: "neutral", securityLevel: "loose" }});
+</script>
+</body></html>""",
+        height=height,
+        scrolling=True,
+    )
 
 
 def _env_mtime() -> float:
@@ -688,6 +709,46 @@ def _page_admin(agent: RAGAgent, stats: dict, index_ok: bool):
             _reload_agent()
             st.rerun()
 
+    st.divider()
+    st.subheader("LangGraph & LangChain — France Civique")
+    st.caption("Orchestration multi-agent : cache PostgreSQL → routage → agent → sauvegarde.")
+    from src.multi_agent.graph import get_graph_mermaid
+
+    mermaid_src = get_graph_mermaid()
+    _render_mermaid(mermaid_src)
+    with st.expander("Code Mermaid (copier / export)"):
+        st.code(mermaid_src, language="text")
+
+    col_lc1, col_lc2 = st.columns(2)
+    with col_lc1:
+        st.markdown("**Outils LangChain**")
+        st.markdown(
+            "- `search_constitution` — Constitution\n"
+            "- `search_elections` — Élections\n"
+            "- `search_justice` — Justice\n"
+            "- `search_test_civique` — Examen civique\n"
+            "- `search_all_corpus` — Tout le corpus"
+        )
+    with col_lc2:
+        st.markdown("**Chaînes LCEL**")
+        st.markdown(
+            "- `retrieve` → contexte documentaire\n"
+            "- `prompt | llm | StrOutputParser`\n"
+            "- Historique : `MessagesPlaceholder`\n"
+            "- Fallback outils si aucun extrait"
+        )
+    try:
+        pg = _pg_stats()
+        if pg:
+            st.caption(
+                f"PostgreSQL : {pg.get('total_sources', 0)} sources · "
+                f"{pg.get('total_chunks', 0)} chunks · "
+                f"justice {pg.get('justice_sources', 0)}"
+            )
+    except Exception:
+        pass
+
+    st.divider()
     st.metric("Chunks indexés", stats["chunks_indexed"])
     if not index_ok and stats["chunks_indexed"] == 0:
         st.error("Index absent ou corrompu — réindexez ci-dessous.")

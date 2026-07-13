@@ -14,6 +14,8 @@ Index de toute la documentation du projet.
 | [COMMANDES.md](COMMANDES.md) | Référence complète CLI et interface web |
 | [MULTI_AGENT.md](MULTI_AGENT.md) | Multi-agent France, PostgreSQL, cache instantané |
 | [DEPLOIEMENT.md](DEPLOIEMENT.md) | Déploiement VPS Docker |
+| [DEPLOIEMENT_GCP.md](DEPLOIEMENT_GCP.md) | Déploiement Google Cloud (pas à pas) |
+| **[DEPLOIEMENT_STREAMLIT_CLOUD.md](DEPLOIEMENT_STREAMLIT_CLOUD.md)** | **★ Streamlit Community Cloud (gratuit)** |
 | [STAGING.md](STAGING.md) | Environnement staging (URLs, statut) |
 
 ## Fichiers racine utiles

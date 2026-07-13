@@ -91,13 +91,17 @@ def collect_metrics() -> dict:
         "branch": env.get("STAGING_BRANCH", "main"),
         "url_app": env.get("STAGING_URL_APP", "http://IP_OU_DOMAINE"),
         "url_health": env.get("STAGING_URL_HEALTH", "http://IP_OU_DOMAINE/_stcore/health"),
+        "stack": env.get(
+            "STAGING_STACK",
+            "Streamlit Cloud + Neon PostgreSQL (ou Docker VPS)",
+        ),
         "files_total": files["total"],
         "files_by_category": files,
         "chunks_indexed": chunks if chunks is not None else "—",
         "sources_pg": sources_pg if sources_pg is not None else "—",
         "cached_queries": cached,
-        "phase": "Phase 2 — Multi-Agents (6 agents)",
-        "routing": "Classifier hybride (mots-clés + historique + thème)",
+        "phase": "Phase 3 — LangGraph + LangChain LCEL + tools",
+        "routing": "LangGraph (cache → route → agent) + classifier",
         "synthesis_model": "gpt-4o-mini",
         "embeddings": "text-embedding-3-small",
         "vector_primary": "PostgreSQL pgvector",
@@ -147,7 +151,7 @@ def render_block(m: dict) -> str:
 | **Serveur** | {m["server"]} |
 | **IP** | `{m["ip"]}` |
 | **Domaine** | `{m["domain"]}` |
-| **Stack** | Docker Compose (caddy + app Streamlit + postgres pgvector) |
+| **Stack** | {m.get("stack", "Streamlit Cloud + Neon PostgreSQL (ou Docker VPS)")} |
 | **Statut** | {_status_badge(m["status"])} |
 
 | Interface | URL |
@@ -186,11 +190,12 @@ def render_block(m: dict) -> str:
                    Streamlit :8501  (docia-app)
                    8 pages · FR/EN
                              │
+                   LangGraph (graph.py)
                    MultiAgentOrchestrator
                              │
               ┌──────────────┴──────────────┐
-              │  Classifier + resolve_topic  │
-              │  (historique · thème actif)    │
+              │  cache PG · route_topic      │
+              │  LangChain tools + LCEL      │
               └──────────────┬──────────────┘
                              │
          ┌───────────────────┼───────────────────┐

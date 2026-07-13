@@ -1,0 +1,59 @@
+# DocIA — déploiement sans build d'image (volume monté)
+# Usage : docker compose -f docker-compose.staging.yml up -d
+# Évite le build torch/CUDA — idéal si Docker manque d'espace disque
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: docia-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-docia}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Définissez POSTGRES_PASSWORD dans .env}
+      POSTGRES_DB: ${POSTGRES_DB:-docia_fr}
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-docia} -d ${POSTGRES_DB:-docia_fr}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    image: python:3.12-slim-bookworm
+    container_name: docia-app
+    restart: unless-stopped
+    working_dir: /app
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-docia}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-docia_fr}
+      DOCUMENTS_DIR: /app/data/documents
+      VECTOR_STORE_DIR: /app/data/vectorstore
+      EMBEDDING_PROVIDER: openai
+      LLM_PROVIDER: openai
+      RUN_PG_INIT: "true"
+    volumes:
+      - .:/app
+      - pip_cache:/root/.cache/pip
+    ports:
+      - "${APP_PORT:-8501}:8501"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: >
+      bash -c "
+        apt-get update -qq &&
+        apt-get install -y -qq --no-install-recommends build-essential libpq-dev curl &&
+        pip install -q --upgrade pip &&
+        pip install -q -r requirements.docker.txt &&
+        python main.py pg-init &&
+        python run_app.py
+      "
+
+volumes:
+  pgdata:
+  pip_cache:

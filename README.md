@@ -2,28 +2,32 @@
 
 > Une question sur la citoyenneté ? **DocIA** répond à partir des sources officielles — Constitution, élections, justice, test civique — avec les textes et les citations.
 
+📄 **[Détails du projet (PROJET_DETAILS.md)](PROJET_DETAILS.md)** — résumé à jour (stack, **staging**, commandes)  
+📚 **[Documentation complète](docs/PROJET_COMPLET.md)** — architecture détaillée  
+🚀 **[Staging](docs/STAGING.md)** — URLs, métriques, déploiement VPS / Streamlit Cloud
+
 **Branche :** `main` — environnement de staging à déployer sur Hetzner
 
 <!-- STAGING:AUTO:START -->
-**Dernière mise à jour :** 2026-07-01 13:40 UTC · Branche `main` · [Détails complets](docs/STAGING.md)
+**Dernière mise à jour :** 2026-07-13 11:00 UTC · Branche `main` · [Détails complets](docs/STAGING.md)
 
 ## Environnement déployé
 
 | | |
 |---|---|
-| **Serveur** | Hetzner CX22 — Ubuntu 24.04 |
+| **Serveur** | Streamlit Community Cloud |
 | **IP** | `—` |
-| **Domaine** | `—` |
-| **Stack** | Docker Compose (caddy + app Streamlit + postgres pgvector) |
-| **Statut** | 🟡 En attente de déploiement |
+| **Domaine** | `doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app` |
+| **Stack** | Streamlit Cloud + Neon PostgreSQL |
+| **Statut** | 🟢 En ligne |
 
 | Interface | URL |
 |-----------|-----|
-| **Application** | http://IP_OU_DOMAINE |
-| **France Civique** (multi-agent) | http://IP_OU_DOMAINE → menu *France Civique* |
-| **Test civique** | http://IP_OU_DOMAINE → menu *Test civique* |
-| **Admin / diagnostic** | http://IP_OU_DOMAINE → menu *Configuration* |
-| **Health** | http://IP_OU_DOMAINE/_stcore/health |
+| **Application** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app |
+| **France Civique** (multi-agent) | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app → menu *France Civique* |
+| **Test civique** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app → menu *Test civique* |
+| **Admin / diagnostic** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app → menu *Configuration* |
+| **Health** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app/_stcore/health |
 
 ## État du déploiement
 
@@ -32,8 +36,8 @@
 | **Chunks indexés** | — *(lancer `pg-ingest`)* |
 | **Sources actives** | 220 fichiers *(PG après ingestion)* `████████████` 100% |
 | **Par catégorie** | constitution 9 · élections 35 · justice 146 · test civique 24 |
-| **Phase déployée** | Phase 2 — Multi-Agents (6 agents) |
-| **Modèle routing** | `Classifier hybride (mots-clés + historique + thème)` |
+| **Phase déployée** | Phase 3 — LangGraph + LangChain LCEL + tools |
+| **Modèle routing** | `LangGraph (cache → route → agent) + classifier` |
 | **Modèle synthesis** | `gpt-4o-mini` |
 | **Embeddings** | `text-embedding-3-small` |
 | **Vector store principal** | `PostgreSQL pgvector` |
@@ -53,11 +57,12 @@
                    Streamlit :8501  (docia-app)
                    8 pages · FR/EN
                              │
+                   LangGraph (graph.py)
                    MultiAgentOrchestrator
                              │
               ┌──────────────┴──────────────┐
-              │  Classifier + resolve_topic  │
-              │  (historique · thème actif)    │
+              │  cache PG · route_topic      │
+              │  LangChain tools + LCEL      │
               └──────────────┬──────────────┘
                              │
          ┌───────────────────┼───────────────────┐
@@ -144,6 +149,8 @@ DATABASE_URL=postgresql+psycopg://docia:docia_secret@localhost:5433/docia_fr
 | [docs/MULTI_AGENT.md](docs/MULTI_AGENT.md) | PostgreSQL multi-agent |
 | [docs/CONFIGURATION.md](docs/CONFIGURATION.md) | Variables `.env` |
 | [docs/DEPLOIEMENT.md](docs/DEPLOIEMENT.md) | **Déploiement VPS Docker** |
+| **[docs/DEPLOIEMENT_STREAMLIT_CLOUD.md](docs/DEPLOIEMENT_STREAMLIT_CLOUD.md)** | **★ Streamlit Community Cloud** |
+| [docs/DEPLOIEMENT_GCP.md](docs/DEPLOIEMENT_GCP.md) | Déploiement Google Cloud |
 | [docs/DEPANNAGE.md](docs/DEPANNAGE.md) | Résolution de problèmes |
 
 ## Structure du projet

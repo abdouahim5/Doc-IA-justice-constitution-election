@@ -17,7 +17,9 @@ if __name__ == "__main__":
         "run",
         str(app_path),
         "--server.headless=true",
-        "--server.address=0.0.0.0",
+        "--server.address=127.0.0.1",
+        "--browser.serverAddress=localhost",
+        "--server.fileWatcherType=none",
         "--browser.gatherUsageStats=false",
     ]
     sys.exit(stcli.main())

@@ -2,28 +2,30 @@
 
 > Une question sur la citoyenneté ? **DocIA** répond à partir des sources officielles — Constitution, élections, justice, test civique — avec les textes et les citations.
 
-**Branche :** `main` — environnement de staging à déployer sur Hetzner · **Repo :** [Doc-IA-justice-constitution-election](https://github.com/abdouahim5/Doc-IA-justice-constitution-election)
+**Branche :** `main` — staging cloud (Streamlit) + VPS Hetzner (prévu) · **Repo :** [Doc-IA-justice-constitution-election](https://github.com/abdouahim5/Doc-IA-justice-constitution-election)
+
+> 📄 Résumé projet : [PROJET_DETAILS.md](../PROJET_DETAILS.md) (section Staging)
 
 <!-- STAGING:AUTO:START -->
-**Dernière mise à jour :** 2026-07-01 13:40 UTC · Branche `main` · [Détails complets](docs/STAGING.md)
+**Dernière mise à jour :** 2026-07-13 11:00 UTC · Branche `main` · [Détails complets](docs/STAGING.md)
 
 ## Environnement déployé
 
 | | |
 |---|---|
-| **Serveur** | Hetzner CX22 — Ubuntu 24.04 |
+| **Serveur** | Streamlit Community Cloud |
 | **IP** | `—` |
-| **Domaine** | `—` |
-| **Stack** | Docker Compose (caddy + app Streamlit + postgres pgvector) |
-| **Statut** | 🟡 En attente de déploiement |
+| **Domaine** | `doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app` |
+| **Stack** | Streamlit Cloud + Neon PostgreSQL |
+| **Statut** | 🟢 En ligne |
 
 | Interface | URL |
 |-----------|-----|
-| **Application** | http://IP_OU_DOMAINE |
-| **France Civique** (multi-agent) | http://IP_OU_DOMAINE → menu *France Civique* |
-| **Test civique** | http://IP_OU_DOMAINE → menu *Test civique* |
-| **Admin / diagnostic** | http://IP_OU_DOMAINE → menu *Configuration* |
-| **Health** | http://IP_OU_DOMAINE/_stcore/health |
+| **Application** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app |
+| **France Civique** (multi-agent) | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app → menu *France Civique* |
+| **Test civique** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app → menu *Test civique* |
+| **Admin / diagnostic** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app → menu *Configuration* |
+| **Health** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app/_stcore/health |
 
 ## État du déploiement
 
@@ -32,8 +34,8 @@
 | **Chunks indexés** | — *(lancer `pg-ingest`)* |
 | **Sources actives** | 220 fichiers *(PG après ingestion)* `████████████` 100% |
 | **Par catégorie** | constitution 9 · élections 35 · justice 146 · test civique 24 |
-| **Phase déployée** | Phase 2 — Multi-Agents (6 agents) |
-| **Modèle routing** | `Classifier hybride (mots-clés + historique + thème)` |
+| **Phase déployée** | Phase 3 — LangGraph + LangChain LCEL + tools |
+| **Modèle routing** | `LangGraph (cache → route → agent) + classifier` |
 | **Modèle synthesis** | `gpt-4o-mini` |
 | **Embeddings** | `text-embedding-3-small` |
 | **Vector store principal** | `PostgreSQL pgvector` |
@@ -53,11 +55,12 @@
                    Streamlit :8501  (docia-app)
                    8 pages · FR/EN
                              │
+                   LangGraph (graph.py)
                    MultiAgentOrchestrator
                              │
               ┌──────────────┴──────────────┐
-              │  Classifier + resolve_topic  │
-              │  (historique · thème actif)    │
+              │  cache PG · route_topic      │
+              │  LangChain tools + LCEL      │
               └──────────────┬──────────────┘
                              │
          ┌───────────────────┼───────────────────┐
@@ -88,16 +91,40 @@
 
 ---
 
-## Agents déployés (Phase 2)
+## Agents déployés (Phase 3 — LangGraph)
 
-| Agent | Domaine | Recherche spécialisée |
-|-------|---------|----------------------|
-| `constitution` | Droit constitutionnel | Articles `ARTICLE N.`, éligibilité président |
-| `elections` | Scrutins, calendrier | Dates, résultats, patterns électoraux |
-| `justice` | Lois, délits, crimes | Patterns pénaux, crawler service-public |
-| `test_civique` | Naturalisation | Formation civique, examen |
-| `data` | Chiffres officiels | `structured_facts`, tableaux PDF |
-| `general` | Fallback | Tout le corpus |
+| Agent | Domaine | Outils LangChain |
+|-------|---------|------------------|
+| `constitution` | Droit constitutionnel | `search_constitution` |
+| `elections` | Scrutins, calendrier | `search_elections` |
+| `justice` | Lois, délits, crimes | `search_justice` |
+| `test_civique` | Naturalisation | `search_test_civique` |
+| `data` | Chiffres officiels | faits + tableaux PG |
+| `general` | Fallback | `search_all_corpus` |
+
+Orchestration : **LangGraph** (`validate → cache → route → agent → save_cache`)
+
+---
+
+## Staging local (Windows)
+
+```powershell
+demarrer_staging.bat
+# ou : docker compose -f docker-compose.staging.yml up -d
+```
+
+---
+
+## Staging Streamlit Cloud
+
+| | |
+|---|---|
+| **URL** | https://doc-ia-justice-constitution-election-ejwpemdaupg3flgtrgziax.streamlit.app |
+| **Entrée** | `app.py` |
+| **Base** | Neon PostgreSQL (sync civique `--civic`) |
+| **Secrets** | `OPENAI_API_KEY`, `DATABASE_URL`, `EMBEDDING_PROVIDER=openai` |
+
+Guide : [DEPLOIEMENT_STREAMLIT_CLOUD.md](DEPLOIEMENT_STREAMLIT_CLOUD.md)
 
 ---
 

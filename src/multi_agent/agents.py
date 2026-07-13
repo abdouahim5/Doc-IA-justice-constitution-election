@@ -3,12 +3,13 @@
 from dataclasses import dataclass, field
 from functools import lru_cache
 
-from langchain_core.prompts import ChatPromptTemplate
 from sqlalchemy.orm import Session
 
 from src.config import get_multi_agent_settings
 from src.db.repository import CorpusRepository
 from src.llm import get_llm
+from src.multi_agent.chains import invoke_qa_chain
+from src.multi_agent.tools import tool_hits_for_topic
 from src.retrieval.hybrid_retriever import _extract_article_numbers, text_has_article
 
 
@@ -383,14 +384,18 @@ class BaseSpecialistAgent:
         question: str,
         display_question: str | None = None,
         conversation_context: str | None = None,
+        history: list[dict] | None = None,
     ) -> AgentResult:
         cfg = get_multi_agent_settings()
         user_q = display_question or question
         chunks, facts, tables = self.retrieve(question, display_question=user_q)
+        if not chunks:
+            chunks = tool_hits_for_topic(self.repo, self._embed, self.name, question)
         article_nums = _extract_article_numbers(user_q)
         history_block = ""
         if conversation_context:
             history_block = f"\n\nHISTORIQUE DE LA CONVERSATION :\n{conversation_context}\n"
+        chat_history = history or []
 
         sources = []
         seen = set()
@@ -416,45 +421,39 @@ class BaseSpecialistAgent:
         context = _format_chunks(chunks, max_chars=chunk_limit)
         system = SYSTEM_CONSTITUTION_ARTICLE if article_nums else self.system_prompt
 
-        if cfg["fast"] or (not facts and not tables):
-            if article_nums:
-                suffix = "\nRecopie le texte exact de l'article demandé."
-            elif _needs_synthesis(user_q):
-                suffix = (
-                    "\nRédige une réponse en phrases complètes (4 à 8 phrases). "
-                    "Ne recopie pas d'extraits bruts."
-                )
-            else:
-                suffix = "\nRéponds en 3-6 phrases maximum."
-            prompt = ChatPromptTemplate.from_messages([
-                ("system", system + suffix),
-                ("human", "Question : {question}" + history_block + "\n\nEXTRAITS :\n{context}"),
-            ])
-            chain = prompt | self.llm
-            answer = chain.invoke({"question": user_q, "context": context}).content
+        if article_nums:
+            suffix = "\nRecopie le texte exact de l'article demandé."
+        elif _needs_synthesis(user_q):
+            suffix = (
+                "\nRédige une réponse en phrases complètes (4 à 8 phrases). "
+                "Ne recopie pas d'extraits bruts."
+            )
+        elif cfg["fast"]:
+            suffix = "\nRéponds en 3-6 phrases maximum."
         else:
-            facts_txt = _format_facts(facts)
-            tables_txt = _format_tables(tables)
-            prompt = ChatPromptTemplate.from_messages([
-                ("system", system),
-                ("human", """Question : {question}""" + history_block + """
+            suffix = ""
 
-EXTRAITS DOCUMENTS :
-{context}
-
-FAITS CHIFFRÉS :
-{facts}
-
-TABLEAUX :
-{tables}"""),
-            ])
-            chain = prompt | self.llm
-            answer = chain.invoke({
-                "question": user_q,
-                "context": context,
-                "facts": facts_txt,
-                "tables": tables_txt,
-            }).content
+        use_facts = not cfg["fast"] and bool(facts or tables)
+        if use_facts:
+            system_full = system
+            answer = invoke_qa_chain(
+                self.llm,
+                system_prompt=system_full,
+                question=user_q,
+                context=context,
+                history=chat_history,
+                facts=_format_facts(facts),
+                tables=_format_tables(tables),
+                with_facts_tables=True,
+            )
+        else:
+            answer = invoke_qa_chain(
+                self.llm,
+                system_prompt=system + suffix + (history_block if not chat_history else ""),
+                question=user_q,
+                context=context,
+                history=chat_history,
+            )
 
         return AgentResult(answer=answer, agent=self.name, sources=sources)
 

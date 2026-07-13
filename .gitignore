@@ -22,6 +22,10 @@ env/
 
 # Vector store (généré localement)
 data/vectorstore/
+data/*.dump
+
+# Staging local (URLs personnalisées)
+deploy/staging.env
 
 # IDE & outils
 .vscode/

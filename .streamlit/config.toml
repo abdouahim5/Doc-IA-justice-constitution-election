@@ -1,14 +1,20 @@
 [server]
 headless = true
 port = 8501
-address = "0.0.0.0"
-enableCORS = false
+address = "127.0.0.1"
+enableCORS = true
 enableXsrfProtection = true
 maxUploadSize = 50
+# Evite le scan de transformers/torchvision dans site-packages (bruit console)
+fileWatcherType = "none"
 
 [browser]
 gatherUsageStats = false
-serverAddress = "0.0.0.0"
+serverAddress = "localhost"
+
+[runner]
+# Ne pas importer les modules a chaque interaction (plus stable en dev)
+fastReruns = true
 
 [theme]
 base = "light"
